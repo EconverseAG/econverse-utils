@@ -1,0 +1,36 @@
+{
+  "name": "econverse-utils",
+  "description": "a collection of utility for ecommerce development in vtex and shopify",
+  "main": "index.js",
+  "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EduardoRodriguesF/econverse-utils.git"
+  },
+  "scripts": {
+    "build": "babel src/index.ts --out-file dist/bundle.js"
+  },
+  "keyword": [
+    "utils",
+    "econverse",
+    "ecommerce",
+    "shopify",
+    "vtex"
+  ],
+  "bugs": {
+    "url": "https://github.com/EduardoRodriguesF/econverse-utils/utils/issues"
+  },
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils/utils#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
