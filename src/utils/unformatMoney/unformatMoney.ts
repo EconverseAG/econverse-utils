@@ -1,5 +1,6 @@
 /**
  * Unformat money to number.
+ * @since 0.0.2
  * @param money String to be formatted.
  * @param base Base for unit value. Representation of R$ 1,00 in number. (default: 100)
  * @example

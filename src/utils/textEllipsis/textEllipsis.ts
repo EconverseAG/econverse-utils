@@ -1,5 +1,6 @@
 /**
  * Insert ellipsis (...) to input text.
+ * @since 0.1.0
  * @param input Text to be ellipsed.
  * @param limit Limit of characters before ellipsed.
  * @param trail (Optional) Custom trail to be inserted.

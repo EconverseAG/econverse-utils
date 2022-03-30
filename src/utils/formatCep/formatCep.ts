@@ -1,6 +1,7 @@
 /**
  * Format string to CEP.
- * @param amount String to be formatted.
+ * @since 0.2.0
+ * @param cep String to be formatted.
  * @example
  * formatCep('11740000') // '11740-000'
  * @returns {String} Formatted string.
