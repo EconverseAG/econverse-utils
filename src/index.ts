@@ -1,9 +1,3 @@
-function helloWorld() {
-  console.log('>>> hello world');
-}
+import formatMoney from './utils/formatMoney';
 
-function byeWorld() {
-  console.log('>>> hello world');
-}
-
-export { helloWorld, byeWorld };
+export default formatMoney;
