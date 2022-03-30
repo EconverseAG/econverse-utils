@@ -1,7 +1,7 @@
 {
   "name": "econverse-utils",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
-  "main": "index.js",
+  "main": "dist/main.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
   "license": "MIT",
   "repository": {
@@ -9,7 +9,7 @@
     "url": "git@github.com:EduardoRodriguesF/econverse-utils.git"
   },
   "scripts": {
-    "build": "babel src/index.ts --out-file dist/bundle.js"
+    "build": "babel src/index.ts --out-file dist/main.js"
   },
   "keyword": [
     "utils",
