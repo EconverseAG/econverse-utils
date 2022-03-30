@@ -1,5 +1,6 @@
 {
   "name": "econverse-utils",
+  "version": "0.0.1",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
   "main": "dist/main.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
