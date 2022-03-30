@@ -10,7 +10,8 @@
     "url": "git@github.com:EduardoRodriguesF/econverse-utils.git"
   },
   "scripts": {
-    "build": "babel src/index.ts --out-file dist/main.js"
+    "build": "babel src/index.ts --out-file dist/main.js",
+    "deploy": "yarn build && npm publish"
   },
   "keyword": [
     "utils",
