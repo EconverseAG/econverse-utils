@@ -1,6 +1,6 @@
 {
   "name": "econverse-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
   "main": "dist/index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
@@ -15,7 +15,7 @@
     "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "deploy": "yarn build && npm publish"
   },
-  "keyword": [
+  "keywords": [
     "utils",
     "econverse",
     "ecommerce",
