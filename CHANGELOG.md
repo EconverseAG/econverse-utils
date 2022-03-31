@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [utils] New **cnpjIsValid** method.
-- [utils] New **cpfIsValid** method.
+- [utils] New **isCnpj** method.
+- [utils] New **isCnpj** method.
 
 ## [0.3.0] - 31-03-2022
 

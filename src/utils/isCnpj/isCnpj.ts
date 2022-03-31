@@ -1,4 +1,4 @@
-function cnpjIsValid(value: string): boolean {
+function isCnpj(value: string): boolean {
   let cnpj: string = value.replace(/[^\d]+/g, '');
 
   if (cnpj.length !== 14) {
@@ -35,4 +35,4 @@ function cnpjIsValid(value: string): boolean {
   return digit1 === digits[1];
 }
 
-export default cnpjIsValid;
+export default isCnpj;

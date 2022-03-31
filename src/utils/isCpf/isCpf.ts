@@ -1,4 +1,4 @@
-function cpfIsValid(value: string): boolean {
+function isCnpj(value: string): boolean {
   let cpf: string = value.replace(/[^\d]+/g, '');
 
   if (cpf.length !== 11) {
@@ -36,4 +36,4 @@ function cpfIsValid(value: string): boolean {
   );
 }
 
-export default cpfIsValid;
+export default isCnpj;
