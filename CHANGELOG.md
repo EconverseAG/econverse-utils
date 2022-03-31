@@ -9,14 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [utils] New **isCpf** method.
-- [utils] New **isCnpj** method.
+- [utils] Added **isCpf** method.
+- [utils] Added **isCnpj** method.
 
 ## [0.3.0] - 31-03-2022
 
 ### Added
 
 - CHANGELOG file.
-- [utils] New **capitalizeFirstLetter** method.
-- [vtex] New **MasterData** module.
-- [vtex] New **getProductById** method.
+- [utils] Added **capitalizeFirstLetter** method.
+- [vtex] Added **MasterData** module.
+- [vtex] Added **getProductById** method.
