@@ -7,13 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.4.1] - 31-03-2022
 
-- Changed the way CHANGELOG informations are presented.
-- Removed *Github workflow* shield from README.
-
 ### Changes
 
-- [utils] Added `isCpf` method.
-- [utils] Added `isCnpj` method.
+- Changed the way CHANGELOG informations are presented.
+- Removed *Github workflow* shield from README.
 
 ## [0.4.0] - 31-03-2022
 
