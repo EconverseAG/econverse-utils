@@ -1,6 +1,6 @@
 # Utils
 
-## `formatMoney`
+## formatMoney
 since `0.0.2`
 
 Format number to money.
@@ -30,7 +30,7 @@ formatNumber(9890, 1)
 ```
 
 
-## `unformatMoney`
+## unformatMoney
 since `0.0.2`
 
 Unformat money to number.
@@ -60,7 +60,7 @@ unformatMoney('R$ 98,90', 1)
 ```
 
 
-## `formatCep`
+## formatCep
 since `0.2.0`
 
 Format string to CEP.
@@ -80,7 +80,7 @@ formatCep('11740000')
 ```
 
 
-## `isCpf`
+## isCpf
 since `0.4.0`
 
 Validates wheather a string is a valid CPF or not.
@@ -102,7 +102,7 @@ isCpf('111.111.111-11')
 // false
 ```
 
-## `isCnpj`
+## isCnpj
 since `0.4.0`
 
 Validates wheather a string is a valid CNPJ or not.
@@ -128,7 +128,7 @@ isCnpj('11.111.111/1111-11')
 ```
 
 
-## `textEllipsis`
+## textEllipsis
 since `0.1.0`
 
 Insert ellipsis (...) to input text.
@@ -153,7 +153,7 @@ textEllipsis('Lorem ipsum', 4, '-')
 ```
 
 
-## `capitalizeFirstLetter`
+## capitalizeFirstLetter
 since `0.2.0`
 
 Capitalizes the first letter of word(s).
