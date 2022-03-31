@@ -1,7 +1,7 @@
 function cnpjIsValid(value: string): boolean {
   let cnpj: string = value.replace(/[^\d]+/g, '');
 
-  if (!cnpj || cnpj.length !== 14) {
+  if (cnpj.length !== 14) {
     return false;
   }
 
