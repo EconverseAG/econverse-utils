@@ -23,7 +23,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- CHANGELOG file.
+- Added CHANGELOG file.
 - [utils] Added `capitalizeFirstLetter` method.
 - [vtex] Added `MasterData` module.
 - [vtex] Added `getProductById` method.
+
+## [0.3.0] - 31-03-2022
+
+### Added
+
+- Added CHANGELOG file.
+- [utils] Added `capitalizeFirstLetter` method.
+- [vtex] Added `MasterData` module.
+- [vtex] Added `getProductById` method.
+
+## [0.2.0] - 29-03-2022
+
+### Added
+
+- [utils] Added `formatCep` method.
+
+## [0.1.0] - 29-03-2022
+
+### Added
+
+- [utils] Added `textEllipsis` method.
+
+## [0.0.2] - 29-03-2022
+
+### Added
+
+- [utils] Added `formatMoney` method.
+- [utils] Added `unformatMoney` method.
