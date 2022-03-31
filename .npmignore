@@ -1,1 +1,6 @@
 /src
+/.github
+.editorconfig
+.eslintrc
+.eslintignore
+prettier.config.js
