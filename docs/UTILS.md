@@ -70,13 +70,32 @@ Format string to CEP.
 
 ### Params
 
- - `cep` [*String*] - String to be unformatted.
+ - `cep` [*String*] - String to be formatted.
 
 ### Example
 
 ```js
 formatCep('11740000') 
 // '11740-000'
+```
+
+## formatCnpj
+since `0.6.0`
+
+Formats a string to CNPJ.
+
+### Return
+*String* - Formatted CNPJ.
+
+### Params
+
+ - `cnpj` [*String*] - String to be formatted.
+
+### Example
+
+```js
+formatCnpj('90742025000153')
+// '90.742.025/0001-53'
 ```
 
 

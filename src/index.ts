@@ -1,4 +1,5 @@
 import formatMoney from './utils/formatMoney';
+import formatCnpj from './utils/formatCnpj';
 import unformatMoney from './utils/unformatMoney';
 
 import textEllipsis from './utils/textEllipsis';
@@ -22,4 +23,5 @@ export {
   insert,
   cleanAccents,
   removeSpecialCharacters,
+  formatCnpj,
 };
