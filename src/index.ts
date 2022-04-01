@@ -6,6 +6,7 @@ import formatCep from './utils/formatCep';
 import capitalizeFirstLetter from './utils/capitalizeFirstLetter';
 import insert from './utils/insert';
 import cleanAccents from './utils/cleanAccents';
+import removeSpecialCharacters from './utils/removeSpecialCharacters';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
@@ -20,4 +21,5 @@ export {
   capitalizeFirstLetter,
   insert,
   cleanAccents,
+  removeSpecialCharacters,
 };
