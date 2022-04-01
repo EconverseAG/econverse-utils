@@ -9,23 +9,20 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
     
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org/econverse-utils
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/econverse-utils
+          env: 
+            NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-    - name: Build
-    - run: npm install
-    - run: gulp build
-    - run: npm publish
-      env: NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Build
+      - run: npm install
+      - run: gulp build
+      - run: npm publish
 
