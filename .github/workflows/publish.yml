@@ -11,18 +11,18 @@ jobs:
     runs-on: windows-latest
     
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js 16
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        registry-url: https://registry.npmjs.org/econverse-utils
-        env: 
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/econverse-utils
+          env: 
+            NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-    - name: Build
-    - run: npm install
-    - run: gulp build
-    - run: npm publish
+      - name: Build
+        run: npm install
+        run: gulp build
+        run: npm publish
 
