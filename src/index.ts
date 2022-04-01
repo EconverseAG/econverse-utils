@@ -5,6 +5,7 @@ import textEllipsis from './utils/textEllipsis';
 import formatCep from './utils/formatCep';
 import capitalizeFirstLetter from './utils/capitalizeFirstLetter';
 import insert from './utils/insert';
+import cleanAccents from './utils/cleanAccents';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
@@ -18,4 +19,5 @@ export {
   isCpf,
   capitalizeFirstLetter,
   insert,
+  cleanAccents,
 };
