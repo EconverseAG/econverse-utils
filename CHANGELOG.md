@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.0] - 01-04-2022
 
+### Added
+
+- [utils] Added `insert` method.
+
 ### Changed
 
-- Fixed `capitalizeFirstLetter` not being exported.
+- [utils] Fixed `capitalizeFirstLetter` not being exported.
 
 ## [0.5.0] - 01-04-2022
 
