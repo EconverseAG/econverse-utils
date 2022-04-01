@@ -175,3 +175,27 @@ capitalizeFirstLetter('hello world')
 capitalizeFirstLetter('hello world', true) 
 // 'Hello World'
 ```
+
+## insert
+since `0.6.0`
+
+Inserts an element at the given index. If the index is too large, element is inserted at the end of the list.
+
+### Return
+*Any[]* - List of items with new item inserted.
+
+### Params
+
+ - `index` [*Number*] - The string to be capitalized.
+ - `newItem` [*Any*] - Element to insert.
+ - `list` [*Any[]*] - List of items.
+
+### Example
+
+```js
+insert(1, 'Batman', [1, 2, 3]);
+// [1, 'Batman', 2, 3]
+
+insert(10, ['Batman'], [1, 2, 3])
+// [1, 2, 3, ['Batman']]
+```
