@@ -1,6 +1,6 @@
 {
   "name": "econverse-utils",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
   "main": "dist/index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
@@ -10,6 +10,7 @@
     "url": "git@github.com:EduardoRodriguesF/econverse-utils.git"
   },
   "exports": {
+    ".": "./dist/index.js",
     "./vtex": "./dist/vtex/index.js"
   },
   "scripts": {
