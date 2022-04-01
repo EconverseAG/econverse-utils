@@ -199,3 +199,23 @@ insert(1, 'Batman', [1, 2, 3]);
 insert(10, ['Batman'], [1, 2, 3])
 // [1, 2, 3, ['Batman']]
 ```
+
+
+## cleanAccents
+since `0.6.0`
+
+Replace accents for its equivalent non-accents characters.
+
+### Return
+*String* - Cleaned string.
+
+### Params
+
+ - `value` [*String*] - Text to be cleaned.
+
+### Example
+
+```js
+cleanAccents('açaí')
+// 'acai'
+```

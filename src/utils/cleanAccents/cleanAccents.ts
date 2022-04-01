@@ -1,5 +1,5 @@
 /**
- * Replace accents for its equivalent non-accents characters
+ * Replace accents for its equivalent non-accents characters.
  * @since 0.6.0
  * @param {string} value Text to be cleaned.
  * @example
