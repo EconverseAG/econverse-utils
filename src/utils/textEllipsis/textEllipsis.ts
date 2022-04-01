@@ -1,13 +1,14 @@
 /**
  * Insert ellipsis (...) to input text.
  * @since 0.1.0
- * @param input Text to be ellipsed.
- * @param limit Limit of characters before ellipsed.
- * @param trail (Optional) Custom trail to be inserted.
+ * @param {string} input Text to be ellipsed.
+ * @param {number} limit Limit of characters before ellipsed.
+ * @param {string} trail (Optional) Custom trail to be inserted.
  * @example
  * textEllipsis('Lorem ipsum', 4) // 'Lore...'
  * textEllipsis('Lorem ipsum', 4, '-') // 'Lore-'
- * @returns {String} Ellipsed input.
+ * @returns {string} Ellipsed input.
+ * @type {(input: string, limit: number, trail?: string) => string}
  */
 function textEllipsis(
   input: string,
