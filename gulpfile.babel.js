@@ -1,4 +1,6 @@
-var { series } = require('gulp');
-var Tasks = require('./gulp/tasks');
+import { series } from 'gulp';
+import { clear, scripts } from './gulp/tasks';
 
-exports.build = series(Tasks.clear, Tasks.scripts);
+export const build = series(clear, scripts);
+
+export default build;
