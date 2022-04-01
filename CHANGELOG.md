@@ -7,12 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.5.0] - 01-04-2022
 
-### Added
-
-### Added
-
-- Github Actions for publishing.
-
 ### Changes
 
 - Changed the way `dist` is built (using Gulp now).
