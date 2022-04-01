@@ -219,3 +219,27 @@ Replace accents for its equivalent non-accents characters.
 cleanAccents('açaí')
 // 'acai'
 ```
+
+
+## removeSpecialCharacters
+since `0.6.0`
+
+Removes special characters from a string.
+
+### Return
+*String* - Cleaned string.
+
+### Params
+
+ - `value` [*String*] - Text to be cleaned.
+ - `value` [*Boolean*] - (Optional) Wheather to keep empty space after removing special characters.
+
+### Example
+
+```js
+removeSpecialCharacters('@açaí')
+// 'aa'
+
+removeSpecialCharacters('@açaí', true)
+// ' a a'
+```

@@ -1,8 +1,8 @@
 /**
- * Remove special characters from a string.
+ * Removes special characters from a string.
  * @since 0.6.0
  * @param {string} value Text to be cleaned.
- * @param {string} keepEmptySpace (Optional) Wheather to keep empty space after removing special characters.
+ * @param {boolean} keepEmptySpace (Optional) Wheather to keep empty space after removing special characters.
  * @example
  * removeSpecialCharacters('@açaí')
  * // 'aa'
