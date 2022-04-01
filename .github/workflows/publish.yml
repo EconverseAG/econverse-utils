@@ -22,7 +22,8 @@ jobs:
             NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Build
-        run: npm install
-        run: gulp build
-        run: npm publish
+        run: |
+          npm install
+          gulp build
+          npm publish
 
