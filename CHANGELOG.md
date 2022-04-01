@@ -5,15 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 01-04-2022
+
+### Changed
+
+- Fixed `capitalizeFirstLetter` not being exported.
+
 ## [0.5.0] - 01-04-2022
 
-### Changes
+### Changed
 
 - Changed the way `dist` is built (using Gulp now).
 
 ## [0.4.1] - 31-03-2022
 
-### Changes
+### Changed
 
 - Changed the way CHANGELOG informations are presented.
 - Removed *Github workflow* shield from README.
