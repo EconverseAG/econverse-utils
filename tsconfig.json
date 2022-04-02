@@ -11,4 +11,10 @@
     "emitDeclarationOnly": true,
     "isolatedModules": true
   },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.type.ts",
+    "**/*.d.ts"
+  ]
 }
