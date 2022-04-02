@@ -13,6 +13,7 @@ import getUrlParam from './utils/getUrlParam';
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
 import isCep from './utils/isCep';
+import isEmail from './utils/isEmail';
 
 import isAfterDate from './utils/isAfterDate';
 import isBeforeDate from './utils/isBeforeDate';
@@ -25,6 +26,7 @@ export {
   isCnpj,
   isCpf,
   isCep,
+  isEmail,
   isAfterDate,
   isBeforeDate,
   capitalizeFirstLetter,

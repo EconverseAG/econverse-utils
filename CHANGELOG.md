@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [utils] Added `getUrlParam` method.
 - [utils] Added `isAfterDate` method.
 - [utils] Added `isBeforeDate` method.
+- [utils] Added `isEmail` method.
 - [utils] Added `isCep` method.
 - [utils] Added `formatCnpj` method.
 - [utils] Added `removeSpecialCharacters` method.

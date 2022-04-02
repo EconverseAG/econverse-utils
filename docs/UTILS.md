@@ -173,6 +173,29 @@ isCep('114')
 ```
 
 
+## isCep
+since `0.6.0`
+
+Validates wheather a string is a valid email or not.
+
+### Return
+*Boolean* - Is email valid.
+
+### Params
+
+ - `value` [*String*] - String to be checked.
+
+### Example
+
+```js
+isEmail('test@email.com')
+// true
+
+isEmail('testemail.com')
+// false
+```
+
+
 ## isAfterDate
 since `0.6.0`
 
