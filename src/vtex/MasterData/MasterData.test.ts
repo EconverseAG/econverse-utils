@@ -12,4 +12,15 @@ describe('MasterData', () => {
       }),
     ).resolves.toHaveProperty('status', 200);
   });
+  it('should be able to create data', async () => {
+    const response = await MasterData.post({
+      store: 'econverse',
+      acronym: 'CL',
+      data: {
+        email: `econverse-utils-JEST@${Date.now()}.com`,
+      },
+    });
+
+    expect(response).toHaveProperty('status', 201);
+  });
 });
