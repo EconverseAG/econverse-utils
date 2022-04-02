@@ -195,6 +195,28 @@ isAfterDate(31, 11, 2019);
 ```
 
 
+## isBeforeDate
+since `0.6.0`
+
+Checks wheather the current ddate is before the given date or not.
+
+### Return
+*Boolean* - If the current date is before the given date or not.
+
+### Params
+
+ - `date` [*Number*] - Date of the month (1-31).
+ - `month` [*Number*] - Month of the year (0-11).
+ - `year` [*Number*] - Year (4 digits).
+
+### Example
+
+```js
+isAfterDate(31, 11, 3999);
+// true
+```
+
+
 ## textEllipsis
 since `0.1.0`
 
