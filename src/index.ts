@@ -11,6 +11,7 @@ import removeSpecialCharacters from './utils/removeSpecialCharacters';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
+import isCep from './utils/isCep';
 
 export {
   formatMoney,
@@ -19,6 +20,7 @@ export {
   formatCep,
   isCnpj,
   isCpf,
+  isCep,
   capitalizeFirstLetter,
   insert,
   cleanAccents,

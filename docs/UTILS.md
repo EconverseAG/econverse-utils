@@ -147,6 +147,32 @@ isCnpj('11.111.111/1111-11')
 ```
 
 
+## isCep
+since `0.4.0`
+
+Validates wheather a string is a valid CEP or not. However, it does not validate wheather the CEP exists.
+
+### Return
+*Boolean* - Is CEP valid.
+
+### Params
+
+ - `value` [*String*] - String to be validated.
+
+### Example
+
+```js
+isCnpj('1174000') 
+// true
+
+isCnpj('11740-000') 
+// true
+
+isCnpj('114') 
+// false
+```
+
+
 ## textEllipsis
 since `0.1.0`
 
