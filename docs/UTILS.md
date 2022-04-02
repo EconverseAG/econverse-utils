@@ -162,14 +162,36 @@ Validates wheather a string is a valid CEP or not. However, it does not validate
 ### Example
 
 ```js
-isCnpj('1174000') 
+isCep('1174000') 
 // true
 
-isCnpj('11740-000') 
+isCep('11740-000') 
 // true
 
-isCnpj('114') 
+isCep('114') 
 // false
+```
+
+
+## isAfterDate
+since `0.6.0`
+
+Checks wheather the current ddate is after the given date or not.
+
+### Return
+*Boolean* - If the current date is after the given date or not.
+
+### Params
+
+ - `date` [*Number*] - Date of the month (1-31).
+ - `month` [*Number*] - Month of the year (0-11).
+ - `year` [*Number*] - Year (4 digits).
+
+### Example
+
+```js
+isAfterDate(31, 11, 2019);
+// true
 ```
 
 
