@@ -26,3 +26,7 @@ import { getProductById } from 'econverse-utils/vtex'
 
 - [General utils](./docs/UTILS.md);
 - [VTEX utils](./docs/VTEX.md);
+
+## License
+
+This project is under the MIT license. See the [LICENSE file](./LICENSE) for details
