@@ -148,7 +148,7 @@ isCnpj('11.111.111/1111-11')
 
 
 ## isCep
-since `0.4.0`
+since `0.6.0`
 
 Validates wheather a string is a valid CEP or not. However, it does not validate wheather the CEP exists.
 
