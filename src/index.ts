@@ -15,6 +15,7 @@ import isCpf from './utils/isCpf';
 import isCep from './utils/isCep';
 
 import isAfterDate from './utils/isAfterDate';
+import isBeforeDate from './utils/isBeforeDate';
 
 export {
   formatMoney,
@@ -24,11 +25,12 @@ export {
   isCnpj,
   isCpf,
   isCep,
+  isAfterDate,
+  isBeforeDate,
   capitalizeFirstLetter,
   insert,
   cleanAccents,
   removeSpecialCharacters,
   formatCnpj,
   getUrlParam,
-  isAfterDate,
 };
