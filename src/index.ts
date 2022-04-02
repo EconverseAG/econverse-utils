@@ -8,6 +8,7 @@ import capitalizeFirstLetter from './utils/capitalizeFirstLetter';
 import insert from './utils/insert';
 import cleanAccents from './utils/cleanAccents';
 import removeSpecialCharacters from './utils/removeSpecialCharacters';
+import getUrlParam from './utils/getUrlParam';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
@@ -26,4 +27,5 @@ export {
   cleanAccents,
   removeSpecialCharacters,
   formatCnpj,
+  getUrlParam,
 };

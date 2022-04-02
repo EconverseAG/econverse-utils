@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [utils] Added `getUrlParam` method.
 - [utils] Added `isCep` method.
 - [utils] Added `formatCnpj` method.
 - [utils] Added `removeSpecialCharacters` method.

@@ -277,7 +277,7 @@ Removes special characters from a string.
 ### Params
 
  - `value` [*String*] - Text to be cleaned.
- - `value` [*Boolean*] - (Optional) Wheather to keep empty space after removing special characters.
+ - `keepEmptySpace` [*Boolean*] - (Optional) Wheather to keep empty space after removing special characters.
 
 ### Example
 
@@ -287,4 +287,25 @@ removeSpecialCharacters('@açaí')
 
 removeSpecialCharacters('@açaí', true)
 // ' a a'
+```
+
+
+## removeSpecialCharacters
+since `0.6.0`
+
+Gets a parameter from the url.
+
+### Return
+*String* - Parameter value.
+
+### Params
+
+ - `url` [*String*] - Url to be parsed.
+ - `param` [*String*] - Parameter to be searched for.
+
+### Example
+
+```js
+getUrlParam('http://localhost:8080/?param=value', 'param');
+// returns 'value'
 ```
