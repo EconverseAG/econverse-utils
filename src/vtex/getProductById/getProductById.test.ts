@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime';
 
 describe('getProductById', () => {
   it('should be able to get a product', async () => {
-    const product = await getProductById('puket', 31911);
+    const product = await getProductById('econverse', 25);
 
     expect(product).toHaveProperty('productName');
   });

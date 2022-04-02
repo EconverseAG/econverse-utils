@@ -2,13 +2,13 @@ import MasterData from '.';
 import 'regenerator-runtime/runtime';
 
 describe('MasterData', () => {
-  it('should be able to request data', async () => {
+  it('should be able to get data', async () => {
     await expect(
       MasterData.get({
-        store: 'lilibee',
+        store: 'econverse',
         acronym: 'CL',
         fields: ['id', 'email'],
-        where: 'email=teste@teste.com.br',
+        where: 'email=acesso@agenciaeconverse.com.br',
       }),
     ).resolves.toHaveProperty('status', 200);
   });
