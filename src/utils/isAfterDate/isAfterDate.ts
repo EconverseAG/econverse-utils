@@ -8,6 +8,7 @@
  * isAfterDate(31, 11, 2019);
  * // true
  * @returns {boolean} True if the current date is after the given date
+ * @type {(date: number, month: number, year: number) => boolean}
  */
 function isAfterDate(date: number, month: number, year: number): boolean {
   const currentDate = new Date();
