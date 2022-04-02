@@ -15,7 +15,7 @@ describe('MasterData', () => {
   it('should be able to create data', async () => {
     const response = await MasterData.post({
       store: 'econverse',
-      acronym: 'CL',
+      acronym: 'TD',
       data: {
         email: `econverse-utils-JEST@${Date.now()}.com`,
       },
