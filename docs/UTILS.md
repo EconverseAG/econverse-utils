@@ -173,7 +173,7 @@ isCep('114')
 ```
 
 
-## isCep
+## isEmail
 since `0.6.0`
 
 Validates wheather a string is a valid email or not.
