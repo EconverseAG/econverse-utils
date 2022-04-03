@@ -15,6 +15,8 @@ import isCpf from './utils/isCpf';
 import isCep from './utils/isCep';
 import isEmail from './utils/isEmail';
 
+import isAndroid from './utils/isAndroid';
+
 import isAfterDate from './utils/isAfterDate';
 import isBeforeDate from './utils/isBeforeDate';
 
@@ -27,6 +29,7 @@ export {
   isCpf,
   isCep,
   isEmail,
+  isAndroid,
   isAfterDate,
   isBeforeDate,
   capitalizeFirstLetter,

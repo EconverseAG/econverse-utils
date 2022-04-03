@@ -196,6 +196,19 @@ isEmail('testemail.com')
 ```
 
 
+## isAndroid
+since `0.7.0`
+
+Checks if the user is using an Android device.
+
+### Return
+*Boolean* - If the device is an Android.
+
+### Params
+
+ - `window` [*Window*] - Window object.
+
+
 ## isAfterDate
 since `0.6.0`
 
