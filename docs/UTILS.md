@@ -209,6 +209,19 @@ Checks if the user is using an Android device.
  - `window` [*Window*] - Window object.
 
 
+## isIOS
+since `0.7.0`
+
+Checks if the user is using an iOS device.
+
+### Returns
+*Boolean* - If the device is an iOS.
+
+### Params
+
+ - `window` [*Window*] - Window object.
+
+
 ## isAfterDate
 since `0.6.0`
 
