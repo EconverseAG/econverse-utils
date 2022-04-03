@@ -9,6 +9,7 @@ import insert from './utils/insert';
 import cleanAccents from './utils/cleanAccents';
 import removeSpecialCharacters from './utils/removeSpecialCharacters';
 import getUrlParam from './utils/getUrlParam';
+import bytesToSize from './utils/bytesToSize';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
@@ -26,6 +27,7 @@ export {
   unformatMoney,
   textEllipsis,
   formatCep,
+  bytesToSize,
   isCnpj,
   isCpf,
   isCep,

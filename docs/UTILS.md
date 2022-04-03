@@ -339,6 +339,26 @@ insert(10, ['Batman'], [1, 2, 3])
 ```
 
 
+## bytesToSize
+since `0.7.0`
+
+Formats bytes as a human readable string.
+
+### Returns
+*String* - Formatted string.
+
+### Params
+
+ - `bytes` [*Number*] - Number of bytes.
+
+### Example
+
+```js
+bytesToSize(1024);
+// 1.0 KB
+```
+
+
 ## cleanAccents
 since `0.6.0`
 
