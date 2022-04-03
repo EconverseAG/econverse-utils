@@ -18,6 +18,8 @@ import isEmail from './utils/isEmail';
 
 import isAndroid from './utils/isAndroid';
 import isIOS from './utils/isIOS';
+import isIE from './utils/isIE';
+import isIE9 from './utils/isIE9';
 
 import isAfterDate from './utils/isAfterDate';
 import isBeforeDate from './utils/isBeforeDate';
@@ -34,6 +36,8 @@ export {
   isEmail,
   isAndroid,
   isIOS,
+  isIE,
+  isIE9,
   isAfterDate,
   isBeforeDate,
   capitalizeFirstLetter,
