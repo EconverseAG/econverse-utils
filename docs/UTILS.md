@@ -228,7 +228,7 @@ since `0.7.0`
 Checks if the user is using Internet Explorer.
 
 ### Returns
-*Boolean* - If the device is Internet Explorer.
+*Boolean* - If the browser is Internet Explorer.
 
 ### Params
 
