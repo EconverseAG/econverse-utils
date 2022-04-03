@@ -5,7 +5,7 @@ since `0.0.2`
 
 Format number to money.
 
-### Return
+### Returns
 *String* - Formatted string.
 
 ### Params
@@ -35,7 +35,7 @@ since `0.0.2`
 
 Unformat money to number.
 
-### Return
+### Returns
 *Number* - Money value.
 
 ### Params
@@ -65,7 +65,7 @@ since `0.2.0`
 
 Format string to CEP.
 
-### Return
+### Returns
 *String* - Formatted string.
 
 ### Params
@@ -84,7 +84,7 @@ since `0.6.0`
 
 Formats a string to CNPJ.
 
-### Return
+### Returns
 *String* - Formatted CNPJ.
 
 ### Params
@@ -104,7 +104,7 @@ since `0.4.0`
 
 Validates wheather a string is a valid CPF or not.
 
-### Return
+### Returns
 *Boolean* - Is CPF valid.
 
 ### Params
@@ -126,7 +126,7 @@ since `0.4.0`
 
 Validates wheather a string is a valid CNPJ or not.
 
-### Return
+### Returns
 *Boolean* - Is CNPJ valid.
 
 ### Params
@@ -152,7 +152,7 @@ since `0.6.0`
 
 Validates wheather a string is a valid CEP or not. However, it does not validate wheather the CEP exists.
 
-### Return
+### Returns
 *Boolean* - Is CEP valid.
 
 ### Params
@@ -178,7 +178,7 @@ since `0.6.0`
 
 Validates wheather a string is a valid email or not.
 
-### Return
+### Returns
 *Boolean* - Is email valid.
 
 ### Params
@@ -201,7 +201,7 @@ since `0.7.0`
 
 Checks if the user is using an Android device.
 
-### Return
+### Returns
 *Boolean* - If the device is an Android.
 
 ### Params
@@ -214,7 +214,7 @@ since `0.6.0`
 
 Checks wheather the current ddate is after the given date or not.
 
-### Return
+### Returns
 *Boolean* - If the current date is after the given date or not.
 
 ### Params
@@ -236,7 +236,7 @@ since `0.6.0`
 
 Checks wheather the current ddate is before the given date or not.
 
-### Return
+### Returns
 *Boolean* - If the current date is before the given date or not.
 
 ### Params
@@ -258,7 +258,7 @@ since `0.1.0`
 
 Insert ellipsis (...) to input text.
 
-### Return
+### Returns
 *String* - Ellipsed input.
 
 ### Params
@@ -283,7 +283,7 @@ since `0.2.0`
 
 Capitalizes the first letter of word(s).
 
-### Return
+### Returns
 *String* - Capitalized string.
 
 ### Params
@@ -306,7 +306,7 @@ since `0.6.0`
 
 Inserts an element at the given index. If the index is too large, element is inserted at the end of the list.
 
-### Return
+### Returns
 *Any[]* - List of items with new item inserted.
 
 ### Params
@@ -331,7 +331,7 @@ since `0.6.0`
 
 Replace accents for its equivalent non-accents characters.
 
-### Return
+### Returns
 *String* - Cleaned string.
 
 ### Params
@@ -351,7 +351,7 @@ since `0.6.0`
 
 Removes special characters from a string.
 
-### Return
+### Returns
 *String* - Cleaned string.
 
 ### Params
@@ -375,7 +375,7 @@ since `0.6.0`
 
 Gets a parameter from the url.
 
-### Return
+### Returns
 *String* - Parameter value.
 
 ### Params
