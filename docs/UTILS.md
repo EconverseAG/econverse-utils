@@ -222,6 +222,19 @@ Checks if the user is using an iOS device.
  - `window` [*Window*] - Window object.
 
 
+## isIE
+since `0.7.0`
+
+Checks if the user is using Internet Explorer.
+
+### Returns
+*Boolean* - If the device is Internet Explorer.
+
+### Params
+
+ - `window` [*Window*] - Window object.
+
+
 ## isAfterDate
 since `0.6.0`
 

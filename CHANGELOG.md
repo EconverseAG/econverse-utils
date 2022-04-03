@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - [utils] Added `bytesToSize` method.
+- [utils] Added `isIE` method.
 - [utils] Added `isIOS` method.
 - [utils] Added `isAndroid` method.
 
