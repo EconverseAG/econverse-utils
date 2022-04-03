@@ -1,7 +1,7 @@
 # econverse-utils
 
-![npm](https://img.shields.io/npm/v/econverse-utils?color=%23a1ff82&style=flat-square)
-![GitHub](https://img.shields.io/github/license/EduardoRodriguesF/econverse-utils?style=flat-square)
+![npm](https://img.shields.io/npm/v/econverse-utils?color=green&style=flat-square)
+![GitHub](https://img.shields.io/github/license/EduardoRodriguesF/econverse-utils?color=red&style=flat-square)
 
 ## Usage
 
