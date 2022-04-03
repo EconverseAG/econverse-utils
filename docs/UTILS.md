@@ -235,6 +235,19 @@ Checks if the user is using Internet Explorer.
  - `window` [*Window*] - Window object.
 
 
+## isIE9
+since `0.7.0`
+
+Checks if the user is using Internet Explorer 9.
+
+### Returns
+*Boolean* - If the browser is Internet Explorer 9.
+
+### Params
+
+ - `window` [*Window*] - Window object.
+
+
 ## isAfterDate
 since `0.6.0`
 
