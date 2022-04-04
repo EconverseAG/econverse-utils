@@ -1,5 +1,5 @@
 export const Folders = Object.freeze({
-  dist: './dist',
+  lib: './lib',
   src: './src',
   utils: './src/utils',
   vtex: './src/vtex',

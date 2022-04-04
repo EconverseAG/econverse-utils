@@ -1,8 +1,8 @@
 {
   "name": "econverse-utils",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
   "license": "MIT",
   "repository": {
@@ -10,8 +10,8 @@
     "url": "git@github.com:EduardoRodriguesF/econverse-utils.git"
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./vtex": "./dist/vtex/index.js"
+    ".": "./lib/index.js",
+    "./vtex": "./lib/vtex/index.js"
   },
   "scripts": {
     "test": "jest --watch",
