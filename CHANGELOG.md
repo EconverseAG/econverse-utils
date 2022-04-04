@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.1] - 04-04-2022
 
-# Changed
+### Changed
 
 - [vtex] Fixed `MasterData.get` request typo.
 - [vtex] Changed `MasterData.get` request method to use version param to avoid cache.
