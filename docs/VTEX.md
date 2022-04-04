@@ -6,8 +6,8 @@
   - [getProductSuggestions](#getProductSuggestions)
   - [getCollectionShelf](#getCollectionShelf)
   - [getProfile](#getProfile)
-  - [MasterData.get](#MasterData.get)
-  - [MasterData.post](#MasterData.post)
+  - [MasterData.get](#masterdataget)
+  - [MasterData.post](#masterdatapost)
 
 # VTEX utilities
 
