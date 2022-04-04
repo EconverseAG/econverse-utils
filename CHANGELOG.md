@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [utils] Added `countdownToDate` method.
 - [utils] Added `bytesToSize` method.
 - [utils] Added `isIE9` method.
 - [utils] Added `isIE` method.

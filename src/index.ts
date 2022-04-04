@@ -10,6 +10,7 @@ import cleanAccents from './utils/cleanAccents';
 import removeSpecialCharacters from './utils/removeSpecialCharacters';
 import getUrlParam from './utils/getUrlParam';
 import bytesToSize from './utils/bytesToSize';
+import countdownToDate from './utils/countdownToDate';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
@@ -30,6 +31,7 @@ export {
   textEllipsis,
   formatCep,
   bytesToSize,
+  countdownToDate,
   isCnpj,
   isCpf,
   isCep,

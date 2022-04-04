@@ -340,6 +340,20 @@ capitalizeFirstLetter('hello world', true)
 // 'Hello World'
 ```
 
+
+## countdownToDate
+since `0.7.0`
+
+Countdown to given date.
+
+### Returns
+*Object* - Countdown to date (days, hours, minutes and seconds).
+
+### Params
+
+ - `date` [*Date*] - Date to countdown to.
+
+
 ## insert
 since `0.6.0`
 
