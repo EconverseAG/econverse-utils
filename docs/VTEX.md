@@ -6,7 +6,7 @@ since `0.3.0`
 Gets a product from catalog by its ID.
 
 ### Returns
-*Object* - Product object.
+*Promise<Object>* - Promise for product object.
 
 ### Params
 
@@ -20,7 +20,7 @@ since `0.7.0`
 Gets product variations (SKUs).
 
 ### Returns
-*Object* - Product informations and its variations.
+*Promise<Object>* - Promise for product informations and its variations.
 
 ### Params
 
@@ -34,7 +34,7 @@ since `0.7.0`
 Gets a list of a product suggestions.
 
 ### Returns
-*Object[]* - List of product suggestions.
+*Promise<Object[]>* - Promise for list of product suggestions.
 
 ### Params
 
@@ -48,7 +48,7 @@ since `0.7.0`
 Gets shelf HTML for a given collection.
 
 ### Returns
-*String* - Search result in HTML.
+*Promise<String>* - Promise for search result in HTML.
 
 ### Params
 
