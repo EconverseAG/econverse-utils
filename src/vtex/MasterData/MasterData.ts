@@ -8,8 +8,9 @@ const MasterData = {
   },
   get: ({ store, acronym, fields, where, useSafeData }: IGetParams) => {
     const fieldsParam = `_fields=${fields.join(',')}`;
+    const versionParam = `_v=${Date.now()}`;
     const apiPath = useSafeData ? 'io/safedata' : 'dataentities';
-    const url = `https://${store}.myvtex.com/api/${apiPath}/${acronym}/search?${where}&${fieldsParam}`;
+    const url = `https://${store}.myvtex.com/api/${apiPath}/${acronym}/search?${where}&${fieldsParam}&${versionParam}`;
 
     return axios.get(url, {
       headers: MasterData.headers,
