@@ -1,3 +1,29 @@
+# Table of contents
+- [Utils](#utils)
+  - [formatMoney](#formatMoney)
+  - [unformatMoney](#unformatMoney)
+  - [formatCep](#formatCep)
+  - [formatCnpj](#formatCnpj)
+  - [isCpf](#isCpf)
+  - [isCnpj](#isCnpj)
+  - [isCep](#isCep)
+  - [isEmail](#isEmail)
+  - [isMobile](#isMobile)
+  - [isAndroid](#isAndroid)
+  - [isIOS](#isIOS)
+  - [isIE](#isIE)
+  - [isIE9](#isIE9)
+  - [isAfterDate](#isAfterDate)
+  - [isBeforeDate](#isBeforeDate)
+  - [textEllipsis](#textEllipsis)
+  - [capitalizeFirstLetter](#capitalizeFirstLetter)
+  - [countdownToDate](#countdownToDate)
+  - [insert](#insert)
+  - [bytesToSize](#bytesToSize)
+  - [cleanAccents](#cleanAccents)
+  - [removeSpecialCharacters](#removeSpecialCharacters)
+  - [getUrlParam](#getUrlParam)
+
 # Utils
 
 ## formatMoney
