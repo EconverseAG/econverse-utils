@@ -12,7 +12,7 @@ describe('countdownToDate', () => {
       days: 3,
       hours: 2,
       minutes: 32,
-      seconds: 20,
+      seconds: 19,
     });
   });
 });
