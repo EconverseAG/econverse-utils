@@ -24,6 +24,15 @@ const MasterData = {
       },
     );
   },
+  put: ({ store, acronym, data }: IPostParams) => {
+    return axios.put(
+      `https://${store}.myvtex.com/api/dataentities/${acronym}/documents`,
+      data,
+      {
+        headers: MasterData.headers,
+      },
+    );
+  },
 };
 
 export default MasterData;
