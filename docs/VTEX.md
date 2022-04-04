@@ -1,3 +1,14 @@
+# Table of contents
+
+- [VTEX utilities](#vtex-utilities)
+- [getProductById](#getProductById)
+- [getProductVariations](#getProductVariations)
+- [getProductSuggestions](#getProductSuggestions)
+- [getCollectionShelf](#getCollectionShelf)
+- [getProfile](#getProfile)
+- [MasterData.get](#MasterData.get)
+- [MasterData.post](#MasterData.post)
+
 # VTEX utilities
 
 ## getProductById
