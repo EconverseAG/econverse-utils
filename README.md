@@ -22,6 +22,8 @@ For VTEX-specific utilities, like `getProductById`, you should import from `econ
 import { getProductById } from 'econverse-utils/vtex'
 ```
 
+If importing `econverse-utils/vtex` throws an error, you can still import it from `econverse-utils/lib/vtex`. (THIS WILL BE FIXED IN LATER VERSIONS)
+
 ## Documentation
 
 - [General utils](./docs/UTILS.md);
