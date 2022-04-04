@@ -1,6 +1,9 @@
 /src
 /.github
+/gulp
+/coverage
 .editorconfig
 .eslintrc
 .eslintignore
 prettier.config.js
+gulp.babel.js

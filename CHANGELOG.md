@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- [utils] Added `countdownToDate` method.
+- [utils] Added `bytesToSize` method.
+- [utils] Added `isIE9` method.
+- [utils] Added `isIE` method.
+- [utils] Added `isIOS` method.
+- [utils] Added `isAndroid` method.
+- [utils] Added `isMobile` method.
+- [vtex] Added `getProductSuggestions` method.
+- [vtex] Added `getProductVariations` method.
+- [vtex] Added `getCollectionShelf` method.
+- [vtex] Added `getProfile` method.
+
 ## [0.6.0] - 02-04-2022
 
 ### Added

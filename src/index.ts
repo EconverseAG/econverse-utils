@@ -9,11 +9,19 @@ import insert from './utils/insert';
 import cleanAccents from './utils/cleanAccents';
 import removeSpecialCharacters from './utils/removeSpecialCharacters';
 import getUrlParam from './utils/getUrlParam';
+import bytesToSize from './utils/bytesToSize';
+import countdownToDate from './utils/countdownToDate';
 
 import isCnpj from './utils/isCnpj';
 import isCpf from './utils/isCpf';
 import isCep from './utils/isCep';
 import isEmail from './utils/isEmail';
+
+import isMobile from './utils/isMobile';
+import isAndroid from './utils/isAndroid';
+import isIOS from './utils/isIOS';
+import isIE from './utils/isIE';
+import isIE9 from './utils/isIE9';
 
 import isAfterDate from './utils/isAfterDate';
 import isBeforeDate from './utils/isBeforeDate';
@@ -23,10 +31,17 @@ export {
   unformatMoney,
   textEllipsis,
   formatCep,
+  bytesToSize,
+  countdownToDate,
   isCnpj,
   isCpf,
   isCep,
   isEmail,
+  isMobile,
+  isAndroid,
+  isIOS,
+  isIE,
+  isIE9,
   isAfterDate,
   isBeforeDate,
   capitalizeFirstLetter,
