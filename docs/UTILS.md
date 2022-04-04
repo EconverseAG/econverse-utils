@@ -46,10 +46,10 @@ Unformat money to number.
 ### Example
 
 ```js
-formatNumber('R$ 1,00')
+unformatMoney('R$ 1,00')
 // 100
 
-formatNumber('R$ 00,01')
+unformatMoney('R$ 00,01')
 // 1
 
 unformatMoney('R$ 98,90') 
@@ -173,7 +173,7 @@ isCep('114')
 ```
 
 
-## isCep
+## isEmail
 since `0.6.0`
 
 Validates wheather a string is a valid email or not.
@@ -235,7 +235,7 @@ Checks wheather the current ddate is before the given date or not.
 ### Example
 
 ```js
-isAfterDate(31, 11, 3999);
+isBeforeDate(31, 11, 3999);
 // true
 ```
 
@@ -357,7 +357,7 @@ removeSpecialCharacters('@açaí', true)
 ```
 
 
-## removeSpecialCharacters
+## getUrlParam
 since `0.6.0`
 
 Gets a parameter from the url.
