@@ -9,7 +9,7 @@ const MasterData = {
   get: ({ store, acronym, fields, where, useSafeData }: IGetParams) => {
     const fieldsParam = `_fields=${fields.join(',')}`;
     const apiPath = useSafeData ? 'io/safedata' : 'dataentities';
-    const url = `https://${store}.myvtex.com/api/${apiPath}/${acronym}/search?${where}&${fieldsParam}}`;
+    const url = `https://${store}.myvtex.com/api/${apiPath}/${acronym}/search?${where}&${fieldsParam}`;
 
     return axios.get(url, {
       headers: MasterData.headers,
