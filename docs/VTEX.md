@@ -60,6 +60,19 @@ Gets shelf HTML for a given collection.
   - shelfTemplateId (`sl=${shelfTemplateId}`) 
   - order (`O=${order}`) 
 
+
+## getProfile
+since `0.7.0`
+
+Gets current user's profile.
+
+### Returns
+*Promise<Object>* - Promise for user profile.
+
+### Params
+
+- `store` [*String*] - Store's account name.
+
 ## MasterData.get
 since `0.3.0`
 

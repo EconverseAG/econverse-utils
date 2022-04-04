@@ -3,6 +3,7 @@ import getProductById from './getProductById';
 import getProductSuggestions from './getProductSuggestions';
 import getProductVariations from './getProductVariations';
 import getCollectionShelf from './getCollectionShelf';
+import getProfile from './getProfile';
 
 export {
   MasterData,
@@ -10,4 +11,5 @@ export {
   getProductSuggestions,
   getProductVariations,
   getCollectionShelf,
+  getProfile,
 };
