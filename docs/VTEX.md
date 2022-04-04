@@ -17,7 +17,7 @@ since `0.3.0`
 Gets a product from catalog by its ID.
 
 ### Returns
-*Promise<Object>* - Promise for product object.
+*Promise* - Promise for product object.
 
 ### Params
 
@@ -31,7 +31,7 @@ since `0.7.0`
 Gets product variations (SKUs).
 
 ### Returns
-*Promise<Object>* - Promise for product informations and its variations.
+*Promise* - Promise for product informations and its variations.
 
 ### Params
 
@@ -78,7 +78,7 @@ since `0.7.0`
 Gets current user's profile.
 
 ### Returns
-*Promise<Object>* - Promise for user profile.
+*Promise* - Promise for user profile.
 
 ### Params
 
@@ -90,7 +90,7 @@ since `0.3.0`
 Gets data from Master Data.
 
 ### Returns
-*Promise<Object>* - Promise for requested data.
+*Promise* - Promise for requested data.
 
 ### Params
 - `params` [*Object*] - Params object.
@@ -107,7 +107,7 @@ since `0.3.0`
 Posts data to Master Data.
 
 ### Returns
-*Promise<Object>* - Promise for posted data.
+*Promise* - Promise for posted data.
 
 ### Params
 - `params` [*Object*] - Params object.
