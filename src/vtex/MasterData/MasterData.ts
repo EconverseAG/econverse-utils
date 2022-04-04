@@ -33,6 +33,15 @@ const MasterData = {
       },
     );
   },
+  patch: ({ store, acronym, data }: IPostParams) => {
+    return axios.patch(
+      `https://${store}.myvtex.com/api/dataentities/${acronym}/documents`,
+      data,
+      {
+        headers: MasterData.headers,
+      },
+    );
+  },
 };
 
 export default MasterData;

@@ -34,4 +34,15 @@ describe('MasterData', () => {
 
     expect(response).toHaveProperty('status', 201);
   });
+  it('should be able to patch data', async () => {
+    const response = await MasterData.patch({
+      store: 'econverse',
+      acronym: 'TD',
+      data: {
+        email: `econverse-utils-JEST@${Date.now()}.com`,
+      },
+    });
+
+    expect(response).toHaveProperty('status', 201);
+  });
 });
