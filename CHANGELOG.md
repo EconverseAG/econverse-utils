@@ -20,8 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [vtex] Added `getProductVariations` method.
 - [vtex] Added `getCollectionShelf` method.
 - [vtex] Added `getProfile` method.
-- [vtex] Added `MasterData.put` method.
-- [vtex] Added `MasterData.patch` method.
 
 ## [0.6.0] - 02-04-2022
 
