@@ -196,6 +196,20 @@ isEmail('testemail.com')
 ```
 
 
+## isMobile
+since `0.7.0`
+
+Checks if the user is using a mobile screen.
+
+### Returns
+*Boolean* - If it is a mobile screen
+
+### Params
+
+ - `window` [*Window*] - Window object.
+ - `mobileWidth` [*Number*] - (Optional) Mobile screen width. Default is 768.
+
+
 ## isAndroid
 since `0.7.0`
 

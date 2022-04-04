@@ -17,6 +17,7 @@ import isCpf from './utils/isCpf';
 import isCep from './utils/isCep';
 import isEmail from './utils/isEmail';
 
+import isMobile from './utils/isMobile';
 import isAndroid from './utils/isAndroid';
 import isIOS from './utils/isIOS';
 import isIE from './utils/isIE';
@@ -36,6 +37,7 @@ export {
   isCpf,
   isCep,
   isEmail,
+  isMobile,
   isAndroid,
   isIOS,
   isIE,

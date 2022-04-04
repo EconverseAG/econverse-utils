@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [utils] Added `isIE` method.
 - [utils] Added `isIOS` method.
 - [utils] Added `isAndroid` method.
+- [utils] Added `isMobile` method.
 - [vtex] Added `getProductSuggestions` method.
 - [vtex] Added `getProductVariations` method.
 - [vtex] Added `getCollectionShelf` method.
