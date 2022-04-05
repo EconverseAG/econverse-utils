@@ -7,17 +7,22 @@ import ts from 'gulp-typescript';
 
 const tsProject = ts.createProject('tsconfig.json', {
   declaration: true,
+  isolatedModules: false,
+  rootDir: '.',
 });
 
-export const Scripts = (source, dest, callback) => {
+export const Scripts = (source, dest) => {
   const tsResult = source
     .pipe(plumber())
-    .pipe(concat('index.ts'))
     .pipe(sourcemaps.init())
     .pipe(tsProject());
 
-  return merge([
-    tsResult.js.pipe(sourcemaps.write('.')).pipe(gulp.dest(`./${dest}`)),
-    tsResult.dts.pipe(gulp.dest(`./${dest}`)),
-  ]).on('end', () => typeof callback === 'function' && callback());
+  const js = tsResult.js
+    .pipe(concat(`index.js`))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(dest));
+
+  const dts = tsResult.dts.pipe(concat(`index.d.ts`)).pipe(gulp.dest(dest));
+
+  return merge(js, dts);
 };
