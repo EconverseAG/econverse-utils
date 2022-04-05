@@ -1,5 +1,12 @@
 import axios from 'axios';
 
+/**
+ * Gets a list of a product suggestions.
+ * @since 0.3.0
+ * @param {string} store VTEX store name (account name).
+ * @param {string | number} productId Product ID.
+ * @returns {Promise<Object>} Promise for list of product suggestions.
+ */
 async function getProductById(
   store: string,
   productId: string | number,

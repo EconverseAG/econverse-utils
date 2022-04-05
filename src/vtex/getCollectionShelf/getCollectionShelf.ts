@@ -1,10 +1,17 @@
 import axios from 'axios';
 import { ISearchParams } from './getCollectionShelf.types';
 
+/**
+ * Gets shelf HTML for a given collection.
+ * @since 0.7.0
+ * @param {string} store VTEX store name (account name).
+ * @param {ISearchParams} params Params object.
+ * @returns {Promise<any>} Promise for search result in HTML.
+ */
 async function getCollectionShelf(
   store: string,
   { collectionId, pageSize, pageNumber, shelfTemplateId, order }: ISearchParams,
-) {
+): Promise<any> {
   const paramsList = [
     `fq=H:${collectionId}`,
     `sl=${shelfTemplateId}`,

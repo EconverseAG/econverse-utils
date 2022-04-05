@@ -5,7 +5,7 @@ import axios from 'axios';
  * @since 0.7.0
  * @param {string} store VTEX store name (account name).
  * @param {string | number} productId Product ID.
- * @returns {Object[]} List of product suggestions.
+ * @returns {Promise<Object[]>} Promise for list of product suggestions.
  */
 async function getProductSuggestions(
   store: string,
