@@ -3,7 +3,7 @@ import { ICepError, ICepInformations } from './getCep.types';
 
 /**
  * Gets CEP informations from ViaCEP API.
- * @since 0.9.0
+ * @since 1.0.0
  * @param {string} cep CEP.
  * @returns {Promise<ICepInformations>} Promise for CEP informations.
  */

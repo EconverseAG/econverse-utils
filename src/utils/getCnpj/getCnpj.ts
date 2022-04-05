@@ -2,7 +2,7 @@ import axios from 'axios';
 
 /**
  * Gets CNPJ informations from Receita WS API.
- * @since 0.9.0
+ * @since 1.0.0
  * @param {string} cnpj CNPJ.
  * @returns {Promise<Object>} Promise for CNPJ informations.
  */

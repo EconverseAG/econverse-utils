@@ -504,7 +504,7 @@ getUrlParam('http://localhost:8080/?param=value', 'param');
 ```
 
 ## getCep
-since `0.9.0`
+since `1.0.0`
 
 Gets CEP informations from ViaCEP API.
 
@@ -518,7 +518,7 @@ Gets CEP informations from ViaCEP API.
 
 
 ## getCnpj
-since `0.9.0`
+since `1.0.0`
 
 Gets CNPJ informations from Receita WS API.
 
