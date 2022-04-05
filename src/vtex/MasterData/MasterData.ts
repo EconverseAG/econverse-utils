@@ -6,7 +6,13 @@ const MasterData = {
     'Content-Type': 'application/json',
     Accept: 'application/vnd.vtex.ds.v10+json',
   },
-  get: async ({ store, acronym, fields, where, useSafeData }: IGetParams) => {
+  get: async ({
+    store,
+    acronym,
+    fields,
+    where,
+    useSafeData,
+  }: IGetParams): Promise<any> => {
     const fieldsParam = `_fields=${fields.join(',')}`;
     const versionParam = `_v=${Date.now()}`;
     const apiPath = useSafeData ? 'io/safedata' : 'dataentities';
@@ -18,7 +24,7 @@ const MasterData = {
 
     return data;
   },
-  post: ({ store, acronym, data }: IPostParams) => {
+  post: ({ store, acronym, data }: IPostParams): Promise<any> => {
     return axios.post(
       `https://${store}.myvtex.com/api/dataentities/${acronym}/documents`,
       data,
