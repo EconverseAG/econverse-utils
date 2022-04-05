@@ -1,6 +1,6 @@
 import { series } from 'gulp';
-import { clear, scripts, vtexUtils } from './gulp/tasks';
+import { clear, compileUtils, compileVtex } from './gulp/tasks';
 
-export const build = series(clear, scripts, vtexUtils);
+export const build = series(clear, compileUtils, compileVtex);
 
 export default build;
