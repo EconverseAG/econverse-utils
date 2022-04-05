@@ -11,7 +11,7 @@
   },
   "exports": {
     ".": "./lib/index.js",
-    "./vtex": "./lib/vtex/index.js"
+    "./vtex": "./vtex/index.js"
   },
   "scripts": {
     "test": "jest --watch",
