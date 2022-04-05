@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- [vtex] BREAKING CHANGE: Changed `MasterData.get` to return data only.
 - Updated VTEX modules inline documentation.
 
 ## [0.8.1] - 05-04-2022
