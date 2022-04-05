@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ICepError, ICepInformations } from './getCep.types';
 
 /**
- * Gets the CEP informations from the ViaCEP API.
+ * Gets CEP informations from ViaCEP API.
  * @since 0.9.0
  * @param {string} cep CEP.
  * @returns {Promise<ICepInformations>} Promise for CEP informations.
