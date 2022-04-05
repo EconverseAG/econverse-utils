@@ -53,6 +53,20 @@ Gets a list of a product suggestions.
  - `productId` [*Number* or *String*] - Product ID to search for.
 
 
+## getProductSimilars
+since `0.7.0`
+
+Gets a list of a product similars.
+
+### Returns
+*Promise<Object[]>* - Promise for list of product similars.
+
+### Params
+
+ - `store` [*String*] - Store's account name.
+ - `productId` [*Number* or *String*] - Product ID to search for.
+
+
 ## getCollectionShelf
 since `0.7.0`
 

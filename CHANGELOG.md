@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - [utils] Added `getCnpj` method.
 - [utils] Added `getCep` method.
+- [vtex] Added `getProductSimilars` method.
 
 ### Changed
 
