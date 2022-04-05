@@ -7,4 +7,4 @@ function isAndroid(window: Window): boolean {
   return /android/i.test(window?.navigator?.userAgent.toLowerCase());
 }
 
-export default isAndroid;
+export { isAndroid };

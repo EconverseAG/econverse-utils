@@ -1,4 +1,4 @@
-import getProfile from './getProfile';
+import getProfile from '.';
 
 describe('getProfile', () => {
   it('should be able to get current user profile', async () => {

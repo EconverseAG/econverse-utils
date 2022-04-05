@@ -11,9 +11,10 @@ export const clear = callback => {
 
 export const compileUtils = callback => {
   const source = gulp.src([
-    './src/index.ts',
     './src/utils/**/*.ts',
+    '!src/**/index.ts',
     '!src/**/*.test.ts',
+    '!src/**/*.types.ts',
   ]);
 
   return Pipes.Scripts(source, 'lib', () => {
@@ -23,9 +24,10 @@ export const compileUtils = callback => {
 
 export const compileVtex = callback => {
   const source = gulp.src([
-    './src/vtex/index.ts',
     './src/vtex/**/*.ts',
+    '!src/**/index.ts',
     '!src/**/*.test.ts',
+    '!src/**/*.types.ts',
   ]);
 
   return Pipes.Scripts(source, 'vtex', () => {

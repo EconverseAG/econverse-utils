@@ -1,4 +1,4 @@
-import getCollectionShelf from './getCollectionShelf';
+import getCollectionShelf from '.';
 
 describe('getCollectionShelf', () => {
   it('should be able to get a collection shelf', async () => {

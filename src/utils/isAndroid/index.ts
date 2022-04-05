@@ -1,3 +1,3 @@
-import isAndroid from './isAndroid';
+import { isAndroid } from './isAndroid';
 
 export default isAndroid;

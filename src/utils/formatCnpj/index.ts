@@ -1,3 +1,3 @@
-import formatCnpj from './formatCnpj';
+import { formatCnpj } from './formatCnpj';
 
 export default formatCnpj;

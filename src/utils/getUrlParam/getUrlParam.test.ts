@@ -1,4 +1,4 @@
-import getUrlParam from './getUrlParam';
+import getUrlParam from '.';
 
 describe('getUrlParam', () => {
   it('should be able to get a url parameter', () => {

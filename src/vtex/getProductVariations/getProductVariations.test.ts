@@ -1,4 +1,4 @@
-import getProductVariations from './getProductVariations';
+import getProductVariations from '.';
 
 describe('getProductVariations', () => {
   it('should be able to get product variants', async () => {

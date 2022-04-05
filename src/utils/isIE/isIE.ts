@@ -7,4 +7,4 @@ function isIE(window: Window): boolean {
   return /msie|trident/i.test(window?.navigator?.userAgent.toLowerCase());
 }
 
-export default isIE;
+export { isIE };

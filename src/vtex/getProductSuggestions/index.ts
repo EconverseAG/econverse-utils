@@ -1,3 +1,3 @@
-import getProductSuggestions from './getProductSuggestions';
+import { getProductSuggestions } from './getProductSuggestions';
 
 export default getProductSuggestions;

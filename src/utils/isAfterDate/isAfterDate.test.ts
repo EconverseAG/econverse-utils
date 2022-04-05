@@ -1,4 +1,4 @@
-import isAfterDate from './isAfterDate';
+import isAfterDate from '.';
 
 describe('isAfterDate', () => {
   it('should return true when the given date is after the current date', () => {

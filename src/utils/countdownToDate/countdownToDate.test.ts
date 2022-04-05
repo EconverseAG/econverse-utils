@@ -1,4 +1,4 @@
-import countdownToDate from './countdownToDate';
+import countdownToDate from '.';
 
 describe('countdownToDate', () => {
   it('should be able to countdown to a date', () => {

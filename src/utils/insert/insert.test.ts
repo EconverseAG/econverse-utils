@@ -1,4 +1,4 @@
-import insert from './insert';
+import { insert } from './insert';
 
 describe('insert', () => {
   it('should be able to insert an item to list', () => {

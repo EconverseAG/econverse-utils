@@ -1,4 +1,4 @@
-import isCep from './isCep';
+import isCep from '.';
 
 describe('isCep', () => {
   it('should be able to validate a CEP without ponctuation', () => {

@@ -9,4 +9,4 @@ function isMobile(window: Window, mobileWidth: number = 768): boolean {
   return window.innerWidth <= mobileWidth;
 }
 
-export default isMobile;
+export { isMobile };

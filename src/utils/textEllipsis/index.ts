@@ -1,3 +1,3 @@
-import textEllipsis from './textEllipsis';
+import { textEllipsis } from './textEllipsis';
 
 export default textEllipsis;

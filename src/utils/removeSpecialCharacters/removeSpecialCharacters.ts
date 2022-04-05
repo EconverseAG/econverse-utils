@@ -19,4 +19,4 @@ function removeSpecialCharacters(
   return value.replace(/[^a-zA-Z0-9]/g, keepEmptySpace ? ' ' : '');
 }
 
-export default removeSpecialCharacters;
+export { removeSpecialCharacters };

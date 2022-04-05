@@ -27,4 +27,4 @@ function isBeforeDate(date: number, month: number, year: number): boolean {
   return false;
 }
 
-export default isBeforeDate;
+export { isBeforeDate };

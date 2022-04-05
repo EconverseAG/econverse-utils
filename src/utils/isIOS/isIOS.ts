@@ -7,4 +7,4 @@ function isIOS(window: Window): boolean {
   return /iphone|ipad|ipod/i.test(window?.navigator?.userAgent.toLowerCase());
 }
 
-export default isIOS;
+export { isIOS };

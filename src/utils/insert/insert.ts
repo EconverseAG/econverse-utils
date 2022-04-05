@@ -17,4 +17,4 @@ function insert(index: number, newItem: any, list: any[]): any[] {
   return [...list.slice(0, index), newItem, ...list.slice(index)];
 }
 
-export default insert;
+export { insert };

@@ -1,3 +1,3 @@
-import isCpf from './isCpf';
+import { isCpf } from './isCpf';
 
 export default isCpf;

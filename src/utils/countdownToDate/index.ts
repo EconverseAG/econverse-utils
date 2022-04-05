@@ -1,3 +1,3 @@
-import countdownToDate from './countdownToDate';
+import { countdownToDate } from './countdownToDate';
 
 export default countdownToDate;

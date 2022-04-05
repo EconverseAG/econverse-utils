@@ -18,4 +18,4 @@ function getUrlParam(url: string, param: string): string {
     : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
-export default getUrlParam;
+export { getUrlParam };

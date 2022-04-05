@@ -1,4 +1,4 @@
-import bytesToSize from './bytesToSize';
+import bytesToSize from '.';
 
 describe('bytesToSize', () => {
   it('should be able to return decimals', () => {

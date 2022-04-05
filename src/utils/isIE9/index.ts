@@ -1,3 +1,3 @@
-import isIE9 from './isIE9';
+import { isIE9 } from './isIE9';
 
 export default isIE9;

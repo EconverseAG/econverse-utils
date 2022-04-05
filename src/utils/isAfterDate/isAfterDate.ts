@@ -27,4 +27,4 @@ function isAfterDate(date: number, month: number, year: number): boolean {
   return false;
 }
 
-export default isAfterDate;
+export { isAfterDate };

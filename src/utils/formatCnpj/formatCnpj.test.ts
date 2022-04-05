@@ -1,4 +1,4 @@
-import formatCnpj from './formatCnpj';
+import formatCnpj from '.';
 
 describe('formatCnpj', () => {
   it('should be able to format a string into CNPJ', () => {

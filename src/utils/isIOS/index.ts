@@ -1,3 +1,3 @@
-import isIOS from './isIOS';
+import { isIOS } from './isIOS';
 
 export default isIOS;

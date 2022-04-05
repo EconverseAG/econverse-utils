@@ -4,4 +4,4 @@ function isCep(value: string): boolean {
   return cep.length === 8;
 }
 
-export default isCep;
+export { isCep };

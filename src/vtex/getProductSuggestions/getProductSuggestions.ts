@@ -18,4 +18,4 @@ async function getProductSuggestions(
   return data;
 }
 
-export default getProductSuggestions;
+export { getProductSuggestions };

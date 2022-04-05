@@ -1,3 +1,3 @@
-import bytesToSize from './bytesToSize';
+import { bytesToSize } from './bytesToSize';
 
 export default bytesToSize;

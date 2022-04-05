@@ -1,3 +1,3 @@
-import cleanAccents from './cleanAccents';
+import { cleanAccents } from './cleanAccents';
 
 export default cleanAccents;

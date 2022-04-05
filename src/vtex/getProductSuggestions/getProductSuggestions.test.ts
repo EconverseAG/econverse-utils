@@ -1,4 +1,4 @@
-import getProductSuggestions from './getProductSuggestions';
+import getProductSuggestions from '.';
 
 describe('getProductSuggestions', () => {
   it('should be able to get a product suggestions', async () => {

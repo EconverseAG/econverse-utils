@@ -1,4 +1,4 @@
-import cleanAccents from './cleanAccents';
+import cleanAccents from '.';
 
 describe('cleanAccents', () => {
   it('should be able to clean the accents of a string', () => {

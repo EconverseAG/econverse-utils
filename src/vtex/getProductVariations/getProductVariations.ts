@@ -18,4 +18,4 @@ async function getProductVariations(
   return data;
 }
 
-export default getProductVariations;
+export { getProductVariations };

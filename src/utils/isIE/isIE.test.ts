@@ -1,4 +1,4 @@
-import isIE from './isIE';
+import isIE from '.';
 
 describe('isIE', () => {
   it('should be able to check if the user is using Internet Explorer', () => {

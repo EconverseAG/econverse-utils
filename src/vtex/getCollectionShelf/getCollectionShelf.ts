@@ -22,4 +22,4 @@ async function getCollectionShelf(
   return data;
 }
 
-export default getCollectionShelf;
+export { getCollectionShelf };

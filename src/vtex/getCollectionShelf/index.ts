@@ -1,3 +1,3 @@
-import getCollectionShelf from './getCollectionShelf';
+import { getCollectionShelf } from './getCollectionShelf';
 
 export default getCollectionShelf;

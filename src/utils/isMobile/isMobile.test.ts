@@ -1,4 +1,4 @@
-import isMobile from './isMobile';
+import isMobile from '.';
 
 describe('isMobile', () => {
   it('should be able to check if user is using a mobile screen', () => {

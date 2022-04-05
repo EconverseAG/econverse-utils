@@ -1,3 +1,3 @@
-import isCnpj from './isCnpj';
+import { isCnpj } from './isCnpj';
 
 export default isCnpj;

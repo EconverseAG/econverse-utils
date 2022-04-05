@@ -1,3 +1,3 @@
-import MasterData from './MasterData';
+import { MasterData } from './MasterData';
 
 export default MasterData;

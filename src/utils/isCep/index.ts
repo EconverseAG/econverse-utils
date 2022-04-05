@@ -1,3 +1,3 @@
-import isCep from './isCep';
+import { isCep } from './isCep';
 
 export default isCep;

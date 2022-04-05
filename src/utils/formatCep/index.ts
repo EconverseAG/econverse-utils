@@ -1,3 +1,3 @@
-import formatCep from './formatCep';
+import { formatCep } from './formatCep';
 
 export default formatCep;

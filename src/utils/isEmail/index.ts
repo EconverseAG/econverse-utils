@@ -1,3 +1,3 @@
-import isEmail from './isEmail';
+import { isEmail } from './isEmail';
 
 export default isEmail;

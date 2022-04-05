@@ -21,4 +21,4 @@ function textEllipsis(
   return input;
 }
 
-export default textEllipsis;
+export { textEllipsis };

@@ -11,4 +11,4 @@ async function getProductById(
   return data[0];
 }
 
-export default getProductById;
+export { getProductById };

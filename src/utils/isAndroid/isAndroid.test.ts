@@ -1,4 +1,4 @@
-import isAndroid from './isAndroid';
+import isAndroid from '.';
 
 describe('isAndroid', () => {
   it('should return true if the user is using an Android device', () => {

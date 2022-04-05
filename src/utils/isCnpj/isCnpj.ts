@@ -35,4 +35,4 @@ function isCnpj(value: string): boolean {
   return digit1 === digits[1];
 }
 
-export default isCnpj;
+export { isCnpj };

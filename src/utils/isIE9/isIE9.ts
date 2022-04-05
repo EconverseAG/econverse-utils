@@ -7,4 +7,4 @@ function isIE9(window: Window): boolean {
   return /msie 9.0/i.test(window?.navigator?.userAgent.toLowerCase());
 }
 
-export default isIE9;
+export { isIE9 };

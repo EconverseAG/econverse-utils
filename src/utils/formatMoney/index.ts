@@ -1,3 +1,3 @@
-import formatMoney from './formatMoney';
+import { formatMoney } from './formatMoney';
 
 export default formatMoney;

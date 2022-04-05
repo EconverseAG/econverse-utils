@@ -27,4 +27,4 @@ const MasterData = {
   },
 };
 
-export default MasterData;
+export { MasterData };

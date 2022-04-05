@@ -1,3 +1,3 @@
-import isBeforeDate from './isBeforeDate';
+import { isBeforeDate } from './isBeforeDate';
 
 export default isBeforeDate;

@@ -14,4 +14,4 @@ async function getProfile(store: string): Promise<Object> {
   return data;
 }
 
-export default getProfile;
+export { getProfile };

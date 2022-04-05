@@ -1,3 +1,3 @@
-import getProfile from './getProfile';
+import { getProfile } from './getProfile';
 
 export default getProfile;

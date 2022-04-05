@@ -1,4 +1,4 @@
-import isBeforeDate from './isBeforeDate';
+import { isBeforeDate } from './isBeforeDate';
 
 describe('isBeforeDate', () => {
   it('should return false when the given date is after the current date', () => {

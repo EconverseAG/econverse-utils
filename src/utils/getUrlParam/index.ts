@@ -1,3 +1,3 @@
-import getUrlParam from './getUrlParam';
+import { getUrlParam } from './getUrlParam';
 
 export default getUrlParam;

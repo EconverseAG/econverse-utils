@@ -36,4 +36,4 @@ function isCpf(value: string): boolean {
   );
 }
 
-export default isCpf;
+export { isCpf };

@@ -1,4 +1,4 @@
-import isIE9 from './isIE9';
+import isIE9 from '.';
 
 describe('isIE9', () => {
   it('should be able to check if the user is using Internet Explorer x.0', () => {

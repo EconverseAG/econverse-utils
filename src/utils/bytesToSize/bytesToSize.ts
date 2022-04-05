@@ -20,4 +20,4 @@ function bytesToSize(bytes: number): string {
   return `${(bytes / 1024 ** i).toFixed(1)} ${sizes[i]}`;
 }
 
-export default bytesToSize;
+export { bytesToSize };

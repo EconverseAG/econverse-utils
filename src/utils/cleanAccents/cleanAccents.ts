@@ -26,4 +26,4 @@ function cleanAccents(value: string): string {
     .replace(/[\u00E7]/g, 'c');
 }
 
-export default cleanAccents;
+export { cleanAccents };

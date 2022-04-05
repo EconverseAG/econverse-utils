@@ -22,4 +22,4 @@ function countdownToDate(date: Date): ICountdownToDateReturn {
   };
 }
 
-export default countdownToDate;
+export { countdownToDate };

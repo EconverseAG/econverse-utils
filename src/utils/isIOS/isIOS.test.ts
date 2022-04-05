@@ -1,4 +1,4 @@
-import isIOS from './isIOS';
+import isIOS from '.';
 
 describe('isIOS', () => {
   it('should return true if the user is using an iOS device', () => {

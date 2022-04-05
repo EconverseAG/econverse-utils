@@ -1,3 +1,3 @@
-import removeSpecialCharacters from './removeSpecialCharacters';
+import { removeSpecialCharacters } from './removeSpecialCharacters';
 
 export default removeSpecialCharacters;

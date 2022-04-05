@@ -1,4 +1,4 @@
-import isCpf from './isCpf';
+import isCpf from '.';
 
 describe('isCpf', () => {
   it('should be able to validate a valid CPF', () => {

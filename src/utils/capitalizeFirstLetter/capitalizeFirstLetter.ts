@@ -20,4 +20,4 @@ function capitalizeFirstLetter(
   return result;
 }
 
-export default capitalizeFirstLetter;
+export { capitalizeFirstLetter };

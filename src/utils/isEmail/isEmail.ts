@@ -17,4 +17,4 @@ function isEmail(value: string): boolean {
   return re.test(String(value).toLowerCase());
 }
 
-export default isEmail;
+export { isEmail };

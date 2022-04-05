@@ -1,4 +1,4 @@
-import unformatMoney from './unformatMoney';
+import unformatMoney from '.';
 
 describe('unformatMoney', () => {
   it('should be able to format a number to money', () => {

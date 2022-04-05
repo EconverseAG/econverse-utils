@@ -1,3 +1,3 @@
-import unformatMoney from './unformatMoney';
+import { unformatMoney } from './unformatMoney';
 
 export default unformatMoney;

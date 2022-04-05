@@ -1,3 +1,3 @@
-import getProductById from './getProductById';
+import { getProductById } from './getProductById';
 
 export default getProductById;

@@ -1,4 +1,4 @@
-import removeSpecialCharacters from './removeSpecialCharacters';
+import removeSpecialCharacters from '.';
 
 describe('removeSpecialCharacters', () => {
   it('should be able to remove special characters', () => {
