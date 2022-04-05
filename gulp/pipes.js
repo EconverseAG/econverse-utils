@@ -1,6 +1,8 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import concat from 'gulp-concat';
+import sourcemaps from 'gulp-sourcemaps';
+import merge from 'merge-stream';
 import ts from 'gulp-typescript';
 
 const tsProject = ts.createProject('tsconfig.json', {
@@ -8,10 +10,14 @@ const tsProject = ts.createProject('tsconfig.json', {
 });
 
 export const Scripts = (source, dest, callback) => {
-  return source
+  const tsResult = source
     .pipe(plumber())
     .pipe(concat('index.ts'))
-    .pipe(tsProject())
-    .js.pipe(gulp.dest(dest))
-    .on('end', () => typeof callback === 'function' && callback());
+    .pipe(sourcemaps.init())
+    .pipe(tsProject());
+
+  return merge([
+    tsResult.js.pipe(sourcemaps.write('.')).pipe(gulp.dest(dest)),
+    tsResult.dts.pipe(gulp.dest(dest + '/types')),
+  ]).on('end', () => typeof callback === 'function' && callback());
 };
