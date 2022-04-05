@@ -1,7 +1,4 @@
 {
-  "files": [
-    "./src/**/*.ts"
-  ],
   "compilerOptions": {
     "baseUrl": "./src",
     "target": "es2016",
