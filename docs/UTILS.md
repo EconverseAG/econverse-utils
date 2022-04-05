@@ -515,3 +515,17 @@ Gets CEP informations from ViaCEP API.
 ### Params
 
 - `cep` [*String*] - CEP.
+
+
+## getCnpj
+since `0.9.0`
+
+Gets CNPJ informations from Receita WS API.
+
+### Returns
+
+*Promise* - Promise for CNPJ informations.
+
+### Params
+
+- `cnpj` [*String*] - CNPJ.
