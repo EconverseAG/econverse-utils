@@ -1,6 +1,6 @@
 {
   "name": "econverse-utils",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "description": "a collection of utility for ecommerce development in vtex and shopify",
   "main": "lib/index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
@@ -28,6 +28,7 @@
   ],
   "files": [
     "lib/",
+    "vtex/",
     "docs/",
     "CHANGELOG.md",
     "LICENSE",
