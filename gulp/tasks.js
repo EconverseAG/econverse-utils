@@ -16,7 +16,6 @@ export const compileUtils = callback => {
     './src/utils/**/*.ts',
     '!src/**/index.ts',
     '!src/**/*.test.ts',
-    '!src/**/*.types.ts',
   ]);
 
   return Pipes.Scripts(source, 'lib', () => {
@@ -29,7 +28,6 @@ export const compileVtex = callback => {
     './src/vtex/**/*.ts',
     '!src/**/index.ts',
     '!src/**/*.test.ts',
-    '!src/**/*.types.ts',
   ]);
 
   return Pipes.Scripts(source, 'vtex', () => {
