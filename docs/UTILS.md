@@ -502,3 +502,16 @@ Gets a parameter from the url.
 getUrlParam('http://localhost:8080/?param=value', 'param');
 // returns 'value'
 ```
+
+## getCep
+since `0.9.0`
+
+Gets CEP informations from ViaCEP API.
+
+### Returns
+
+*Promise* - Promise for CEP informations.
+
+### Params
+
+- `cep` [*String*] - CEP.
