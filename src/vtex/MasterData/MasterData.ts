@@ -6,6 +6,12 @@ const MasterData = {
     'Content-Type': 'application/json',
     Accept: 'application/vnd.vtex.ds.v10+json',
   },
+  /**
+   * Gets data from Master Data.
+   * @since 0.3.0
+   * @param {IGetParams} params Params object.
+   * @returns {Promise<any>} Promise for requested data.
+   */
   get: async ({
     store,
     acronym,
@@ -24,6 +30,12 @@ const MasterData = {
 
     return data;
   },
+  /**
+   * Posts data to Master Data.
+   * @since 0.3.0
+   * @param {IPostParams} params Params object
+   * @returns {Promise<any>} Promise for posted data.
+   */
   post: ({ store, acronym, data }: IPostParams): Promise<any> => {
     return axios.post(
       `https://${store}.myvtex.com/api/dataentities/${acronym}/documents`,
