@@ -4,8 +4,10 @@ import * as Paths from './paths';
 import * as Pipes from './pipes';
 
 export const clear = callback => {
-  if (fs.existsSync(Paths.Folders.lib))
-    fs.rmSync(Paths.Folders.lib, { recursive: true });
+  if (fs.existsSync(Paths.Folders.lib.utils))
+    fs.rmSync(Paths.Folders.lib.utils, { recursive: true });
+  if (fs.existsSync(Paths.Folders.lib.vtex))
+    fs.rmSync(Paths.Folders.lib.vtex, { recursive: true });
   if (typeof callback === 'function') callback();
 };
 

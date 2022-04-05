@@ -1,5 +1,8 @@
 export const Folders = Object.freeze({
-  lib: './lib',
+  lib: {
+    utils: './lib',
+    vtex: './vtex',
+  },
   src: './src',
   utils: './src/utils',
   vtex: './src/vtex',

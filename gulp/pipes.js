@@ -7,6 +7,8 @@ import ts from 'gulp-typescript';
 
 const tsProject = ts.createProject('tsconfig.json', {
   declaration: true,
+  declarationMap: true,
+  emitDeclarationOnly: true,
 });
 
 export const Scripts = (source, dest, callback) => {
@@ -16,8 +18,8 @@ export const Scripts = (source, dest, callback) => {
     .pipe(sourcemaps.init())
     .pipe(tsProject());
 
-  return merge([
-    tsResult.js.pipe(sourcemaps.write('.')).pipe(gulp.dest(dest)),
-    tsResult.dts.pipe(gulp.dest(dest + '/types')),
-  ]).on('end', () => typeof callback === 'function' && callback());
+  return merge(tsResult, tsResult.js)
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(dest))
+    .on('end', () => typeof callback === 'function' && callback());
 };
