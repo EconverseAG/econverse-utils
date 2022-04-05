@@ -3,14 +3,14 @@ import 'regenerator-runtime/runtime';
 
 describe('MasterData', () => {
   it('should be able to get data', async () => {
-    await expect(
-      MasterData.get({
-        store: 'econverse',
-        acronym: 'CL',
-        fields: ['id', 'email'],
-        where: 'email=acesso@agenciaeconverse.com.br',
-      }),
-    ).resolves.toHaveProperty('status', 200);
+    const result = await MasterData.get({
+      store: 'econverse',
+      acronym: 'CL',
+      fields: ['id', 'email'],
+      where: 'email=acesso@agenciaeconverse.com.br',
+    });
+
+    expect(result[0]).toHaveProperty('email', 'acesso@agenciaeconverse.com.br');
   });
   it('should be able to create data', async () => {
     const response = await MasterData.post({
