@@ -13,6 +13,8 @@
 <dd><p>Gets product variations (SKUs).</p></dd>
 <dt><a href="#getProfile">getProfile(store)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
 <dd><p>Gets current user's profile.</p></dd>
+<dt><a href="#getShelfById">getShelfById(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></dt>
+<dd><p>Gets product shelf for given ids.</p></dd>
 <dt><a href="#getShelfBySku">getShelfBySku(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></dt>
 <dd><p>Gets product shelf for given SKUs.</p></dd>
 </dl>
@@ -104,6 +106,25 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | store | <code>string</code> | <p>Store's account name.</p> |
+
+<a name="getShelfById"></a>
+
+## getShelfById(store, params) ⇒ <code>Promise.&lt;any&gt;</code>
+<p>Gets product shelf for given ids.</p>
+
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;any&gt;</code> - <p>Promise for shelf HTML string.</p>  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| params | <code>Object</code> | <p>Params object.</p> |
+| params.productIds | <code>number</code> \| <code>string</code> | <p>List of product IDs.</p> |
+| params.pageSize | <code>number</code> \| <code>string</code> | <p>Products per page.</p> |
+| params.pageNumber | <code>number</code> \| <code>string</code> | <p>Page Number.</p> |
+| params.shelfTemplateId | <code>string</code> | <p>Shelf template ID.</p> |
+| params.order | <code>string</code> | <p>Ordering method (Check VTEX order parameters).</p> |
 
 <a name="getShelfBySku"></a>
 
