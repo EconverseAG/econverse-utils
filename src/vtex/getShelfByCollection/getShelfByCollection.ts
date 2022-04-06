@@ -1,21 +1,19 @@
 import axios from 'axios';
-import { ISearchParams } from './getCollectionShelf.types';
+import { ISearchParams } from './getShelfByCollection.types';
 
 /**
- * Gets shelf HTML for a given collection.
+ * Gets product shelf for given collection.
  * @since 0.7.0
- * @deprecated Since 1.1.0. Will be removed in version 2.0.0
- * @see getShelfByCollection
  * @param {string} store VTEX store name (account name).
  * @param {Object} params Params object.
  * @param {number | string} params.collectionId Collection ID.
  * @param {number | string} params.pageSize Products per page.
  * @param {number | string} params.pageNumber Page Number.
  * @param {string} params.shelfTemplateId Shelf template ID.
- * @param {string} params.order Ordering method.
+ * @param {string} params.order Ordering method (Check VTEX order parameters).
  * @returns {Promise<any>} Promise for search result in HTML.
  */
-async function getCollectionShelf(
+async function getShelfByCollection(
   store: string,
   { collectionId, pageSize, pageNumber, shelfTemplateId, order }: ISearchParams,
 ): Promise<any> {
@@ -36,4 +34,4 @@ async function getCollectionShelf(
   return data;
 }
 
-export { getCollectionShelf };
+export { getShelfByCollection };
