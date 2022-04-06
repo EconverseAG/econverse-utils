@@ -38,9 +38,9 @@
     "README.md"
   ],
   "bugs": {
-    "url": "https://github.com/EduardoRodriguesF/econverse-utils/utils/issues"
+    "url": "https://github.com/EduardoRodriguesF/econverse-utils/issues"
   },
-  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils/utils#readme",
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.8",
