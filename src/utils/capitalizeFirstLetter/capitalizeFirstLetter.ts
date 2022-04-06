@@ -1,8 +1,8 @@
 /**
  * Capitalizes the first letter of (each) word(s).
- * @param input {String} The string to be capitalized.
- * @param allWords {Boolean} Whether to capitalize all words or just the first.
- * @returns {String} String with first letter capitalized.
+ * @param {string} input The string to be capitalized.
+ * @param {boolean} allWords (Optional) Whether to capitalize all words or just the first.
+ * @returns {string} String with first letter capitalized.
  */
 function capitalizeFirstLetter(
   input: string,

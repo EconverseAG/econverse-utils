@@ -1,3 +1,18 @@
+/**
+ * Checks if the given value is a valid CNPJ or not.
+ * @since 0.4.0
+ * @param {string} value Value to be checked.
+ * @returns {boolean} Whether the value is a valid CNPJ or not.
+ * @example
+ * isCnpj('95.890.661/0001-46');
+ * // true
+ *
+ * isCnpj('95890661000146');
+ * // true
+ *
+ * isCnpj('11.111.111/1111-11')
+ * // false
+ */
 function isCnpj(value: string): boolean {
   let cnpj: string = value.replace(/[^\d]+/g, '');
 

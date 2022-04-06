@@ -3,14 +3,13 @@
  * @since 0.6.0
  * @param {string} value Text to be cleaned.
  * @param {boolean} keepEmptySpace (Optional) Wheather to keep empty space after removing special characters.
+ * @returns {string} Cleaned string.
  * @example
  * removeSpecialCharacters('@açaí')
  * // 'aa'
  *
  * removeSpecialCharacters('@açaí', true)
  * // ' a a'
- * @returns {string} Cleaned string.
- * @type {(value: string, keepEmptySpace?: boolean) => string}
  */
 function removeSpecialCharacters(
   value: string,

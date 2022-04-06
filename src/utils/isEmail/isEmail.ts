@@ -1,15 +1,14 @@
 /**
  * Checks if the given value is a valid email or not.
  * @since 0.6.0
- * @param value Value to be checked.
+ * @param {string} value Value to be checked.
+ * @returns {boolean} Whether the value is a valid email or not.
  * @example
  * isEmail('test@email.com')
  * // true
  *
  * isEmail('testemail.com')
  * // false
- * @returns Whether the value is a valid email or not.
- * @type {(value: string) => boolean}
  */
 function isEmail(value: string): boolean {
   const re =

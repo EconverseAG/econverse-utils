@@ -2,11 +2,10 @@
  * Formats a string into CNPJ.
  * @since 0.6.0
  * @param {string} cnpj String to be formatted.
+ * @returns {string} Formatted CNPJ.
  * @example
  * formatCnpj('90742025000153')
  * // '90.742.025/0001-53'
- * @returns {string} Formatted CNPJ.
- * @type {(cnpj: string) => string}
  */
 function formatCnpj(cnpj: string): string {
   return cnpj

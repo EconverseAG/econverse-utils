@@ -2,11 +2,10 @@
  * Replace accents for its equivalent non-accents characters.
  * @since 0.6.0
  * @param {string} value Text to be cleaned.
+ * @returns {string} Cleaned string.
  * @example
  * cleanAccents('açaí')
  * // 'acai'
- * @returns {string} Cleaned string.
- * @type {(value: string) => string}
  */
 function cleanAccents(value: string): string {
   return value

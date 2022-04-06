@@ -1,11 +1,11 @@
 /**
  * Formats bytes as a human readable string.
+ * @since 0.7.0
  * @param {number} bytes Number of bytes.
+ * @returns {string} Formatted string.
  * @example
  * bytesToSize(1024)
  * // 1.0 KB
- * @returns {string} Formatted string.
- * @type {(bytes: number) => string}
  */
 function bytesToSize(bytes: number): string {
   const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];

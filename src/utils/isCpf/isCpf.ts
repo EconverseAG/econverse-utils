@@ -1,3 +1,18 @@
+/**
+ * Checks if the given value is a valid CPF or not.
+ * @since 0.4.0
+ * @param {string} value Value to be checked.
+ * @returns {boolean} Whether the value is a valid CPF or not.
+ * @example
+ * isCpf('223.101.020-83');
+ * // true
+ *
+ * isCpf('22310102083');
+ * // true
+ *
+ * isCpf('111.111.111-11')
+ * // false
+ */
 function isCpf(value: string): boolean {
   let cpf: string = value.replace(/[^\d]+/g, '');
 

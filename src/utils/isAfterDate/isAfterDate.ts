@@ -4,11 +4,10 @@
  * @param {number} date Date of the month (1-31).
  * @param {number} month Month of the year (0-11).
  * @param {number} year Year (4 digits).
+ * @returns {boolean} True if the current date is after the given date
  * @example
  * isAfterDate(31, 11, 2019);
  * // true
- * @returns {boolean} True if the current date is after the given date
- * @type {(date: number, month: number, year: number) => boolean}
  */
 function isAfterDate(date: number, month: number, year: number): boolean {
   const currentDate = new Date();
