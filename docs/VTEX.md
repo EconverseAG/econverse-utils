@@ -19,6 +19,8 @@
 <dd><p>Gets product shelf for given ids.</p></dd>
 <dt><a href="#getShelfBySku">getShelfBySku(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></dt>
 <dd><p>Gets product shelf for given SKUs.</p></dd>
+<dt><a href="#getSkuById">getSkuById(store, sku)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
+<dd><p>Gets a SKU information given its ID.</p></dd>
 </dl>
 
 <a name="getCollectionShelf"></a>
@@ -168,4 +170,18 @@
 | params.pageNumber | <code>number</code> \| <code>string</code> | <p>Page Number.</p> |
 | params.shelfTemplateId | <code>string</code> | <p>Shelf template ID.</p> |
 | params.order | <code>string</code> | <p>Ordering method (Check VTEX order parameters).</p> |
+
+<a name="getSkuById"></a>
+
+## getSkuById(store, sku) ⇒ <code>Promise.&lt;Object&gt;</code>
+<p>Gets a SKU information given its ID.</p>
+
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for list of product suggestions.</p>  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| sku | <code>string</code> \| <code>number</code> | <p>SKU.</p> |
 
