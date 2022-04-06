@@ -7,7 +7,7 @@
 <dd><p>Capitalizes the first letter of (each) word(s).</p></dd>
 <dt><a href="#cleanAccents">cleanAccents(value)</a> ⇒ <code>string</code></dt>
 <dd><p>Replace accents for its equivalent non-accents characters.</p></dd>
-<dt><a href="#countdownToDate">countdownToDate(date)</a> ⇒ <code>ICountdownToDateReturn</code></dt>
+<dt><a href="#countdownToDate">countdownToDate(date)</a> ⇒ <code>Object</code></dt>
 <dd><p>Countdown to given date.</p></dd>
 <dt><a href="#formatCep">formatCep(cep)</a> ⇒ <code>string</code></dt>
 <dd><p>Format string to CEP.</p></dd>
@@ -15,7 +15,7 @@
 <dd><p>Formats a string into CNPJ.</p></dd>
 <dt><a href="#formatMoney">formatMoney(amount, base)</a> ⇒ <code>string</code></dt>
 <dd><p>Format number to money.</p></dd>
-<dt><a href="#getCep">getCep(cep)</a> ⇒ <code>Promise.&lt;(ICepInformations|ICepError)&gt;</code></dt>
+<dt><a href="#getCep">getCep(cep)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
 <dd><p>Gets CEP informations from ViaCEP API.</p></dd>
 <dt><a href="#getCnpj">getCnpj(cnpj)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
 <dd><p>Gets CNPJ informations from Receita WS API.</p></dd>
@@ -100,11 +100,11 @@ cleanAccents('açaí')// 'acai'
 ```
 <a name="countdownToDate"></a>
 
-## countdownToDate(date) ⇒ <code>ICountdownToDateReturn</code>
+## countdownToDate(date) ⇒ <code>Object</code>
 <p>Countdown to given date.</p>
 
 **Kind**: global function  
-**Returns**: <code>ICountdownToDateReturn</code> - <p>Countdown to date object (days, hours, minutes and seconds).</p>  
+**Returns**: <code>Object</code> - <p>Countdown to date object.</p>  
 **Since**: 0.7.0  
 
 | Param | Type | Description |
@@ -165,11 +165,11 @@ formatNumber(9890)// R$ 98,90formatNumber(9890, 1)// R$ 9890,00
 ```
 <a name="getCep"></a>
 
-## getCep(cep) ⇒ <code>Promise.&lt;(ICepInformations\|ICepError)&gt;</code>
+## getCep(cep) ⇒ <code>Promise.&lt;Object&gt;</code>
 <p>Gets CEP informations from ViaCEP API.</p>
 
 **Kind**: global function  
-**Returns**: <code>Promise.&lt;(ICepInformations\|ICepError)&gt;</code> - <p>Promise for CEP informations.</p>  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for CEP informations.</p>  
 **Since**: 1.0.0  
 
 | Param | Type | Description |

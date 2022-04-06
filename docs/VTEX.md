@@ -29,7 +29,12 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | store | <code>string</code> | <p>VTEX store name (account name).</p> |
-| params | <code>ISearchParams</code> | <p>Params object.</p> |
+| params | <code>Object</code> | <p>Params object.</p> |
+| params.collectionId | <code>number</code> \| <code>string</code> | <p>Collection ID.</p> |
+| params.pageSize | <code>number</code> \| <code>string</code> | <p>Products per page.</p> |
+| params.pageNumber | <code>number</code> \| <code>string</code> | <p>Page Number.</p> |
+| params.shelfTemplateId | <code>string</code> | <p>Shelf template ID.</p> |
+| params.order | <code>string</code> | <p>Ordering method.</p> |
 
 <a name="getProductById"></a>
 
@@ -112,5 +117,10 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | store | <code>string</code> | <p>VTEX store name (account name).</p> |
-| params | <code>ISearchParams</code> | <p>Params object.</p> |
+| params | <code>Object</code> | <p>Params object.</p> |
+| params.skus | <code>number</code> \| <code>string</code> | <p>SKUs.</p> |
+| params.pageSize | <code>number</code> \| <code>string</code> | <p>Products per page.</p> |
+| params.pageNumber | <code>number</code> \| <code>string</code> | <p>Page Number.</p> |
+| params.shelfTemplateId | <code>string</code> | <p>Shelf template ID.</p> |
+| params.order | <code>string</code> | <p>Ordering method (Check VTEX order parameters).</p> |
 

@@ -5,7 +5,12 @@ import { ISearchParams } from './getShelfBySku.types';
  * Gets product shelf for given SKUs.
  * @since 1.1.0
  * @param {string} store VTEX store name (account name).
- * @param {ISearchParams} params Params object.
+ * @param {Object} params Params object.
+ * @param {number | string} params.skus SKUs.
+ * @param {number | string} params.pageSize Products per page.
+ * @param {number | string} params.pageNumber Page Number.
+ * @param {string} params.shelfTemplateId Shelf template ID.
+ * @param {string} params.order Ordering method (Check VTEX order parameters).
  * @returns {Promise<any>} Promise for shelf HTML string.
  */
 async function getShelfBySku(

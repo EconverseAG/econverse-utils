@@ -4,7 +4,7 @@ import { ICountdownToDateReturn } from './countdownToDate.types';
  * Countdown to given date.
  * @since 0.7.0
  * @param {Date} date Date to countdown to.
- * @returns {ICountdownToDateReturn} Countdown to date object (days, hours, minutes and seconds).
+ * @returns {{ days: number, hours: number, minutes: number, seconds: number }} Countdown to date object.
  */
 function countdownToDate(date: Date): ICountdownToDateReturn {
   const now = new Date();

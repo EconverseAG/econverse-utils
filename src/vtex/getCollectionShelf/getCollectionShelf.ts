@@ -5,7 +5,12 @@ import { ISearchParams } from './getCollectionShelf.types';
  * Gets shelf HTML for a given collection.
  * @since 0.7.0
  * @param {string} store VTEX store name (account name).
- * @param {ISearchParams} params Params object.
+ * @param {Object} params Params object.
+ * @param {number | string} params.collectionId Collection ID.
+ * @param {number | string} params.pageSize Products per page.
+ * @param {number | string} params.pageNumber Page Number.
+ * @param {string} params.shelfTemplateId Shelf template ID.
+ * @param {string} params.order Ordering method.
  * @returns {Promise<any>} Promise for search result in HTML.
  */
 async function getCollectionShelf(
