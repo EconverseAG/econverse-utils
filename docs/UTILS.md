@@ -1,531 +1,434 @@
-# Table of contents
-- [Utils](#utils)
-  - [formatMoney](#formatMoney)
-  - [unformatMoney](#unformatMoney)
-  - [formatCep](#formatCep)
-  - [formatCnpj](#formatCnpj)
-  - [isCpf](#isCpf)
-  - [isCnpj](#isCnpj)
-  - [isCep](#isCep)
-  - [isEmail](#isEmail)
-  - [isMobile](#isMobile)
-  - [isAndroid](#isAndroid)
-  - [isIOS](#isIOS)
-  - [isIE](#isIE)
-  - [isIE9](#isIE9)
-  - [isAfterDate](#isAfterDate)
-  - [isBeforeDate](#isBeforeDate)
-  - [textEllipsis](#textEllipsis)
-  - [capitalizeFirstLetter](#capitalizeFirstLetter)
-  - [countdownToDate](#countdownToDate)
-  - [insert](#insert)
-  - [bytesToSize](#bytesToSize)
-  - [cleanAccents](#cleanAccents)
-  - [removeSpecialCharacters](#removeSpecialCharacters)
-  - [getUrlParam](#getUrlParam)
+## Functions
 
-# Utils
+<dl>
+<dt><a href="#bytesToSize">bytesToSize(bytes)</a> ⇒ <code>string</code></dt>
+<dd><p>Formats bytes as a human readable string.</p></dd>
+<dt><a href="#capitalizeFirstLetter">capitalizeFirstLetter(input, allWords)</a> ⇒ <code>string</code></dt>
+<dd><p>Capitalizes the first letter of (each) word(s).</p></dd>
+<dt><a href="#cleanAccents">cleanAccents(value)</a> ⇒ <code>string</code></dt>
+<dd><p>Replace accents for its equivalent non-accents characters.</p></dd>
+<dt><a href="#countdownToDate">countdownToDate(date)</a> ⇒ <code>ICountdownToDateReturn</code></dt>
+<dd><p>Countdown to given date.</p></dd>
+<dt><a href="#formatCep">formatCep(cep)</a> ⇒ <code>string</code></dt>
+<dd><p>Format string to CEP.</p></dd>
+<dt><a href="#formatCnpj">formatCnpj(cnpj)</a> ⇒ <code>string</code></dt>
+<dd><p>Formats a string into CNPJ.</p></dd>
+<dt><a href="#formatMoney">formatMoney(amount, base)</a> ⇒ <code>string</code></dt>
+<dd><p>Format number to money.</p></dd>
+<dt><a href="#getCep">getCep(cep)</a> ⇒ <code>Promise.&lt;(ICepInformations|ICepError)&gt;</code></dt>
+<dd><p>Gets CEP informations from ViaCEP API.</p></dd>
+<dt><a href="#getCnpj">getCnpj(cnpj)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
+<dd><p>Gets CNPJ informations from Receita WS API.</p></dd>
+<dt><a href="#getUrlParam">getUrlParam(url, param)</a> ⇒ <code>string</code></dt>
+<dd><p>Gets a parameter from the url.</p></dd>
+<dt><a href="#insert">insert(index, newItem, list)</a> ⇒ <code>Array.&lt;any&gt;</code></dt>
+<dd><p>Inserts an element at the given index. If the index is too large, element is inserted at the end of the list.</p></dd>
+<dt><a href="#isAfterDate">isAfterDate(date, month, year)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks wheather the current ddate is after the given date or not.</p></dd>
+<dt><a href="#isAndroid">isAndroid(window)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the user is using an Android device.</p></dd>
+<dt><a href="#isBeforeDate">isBeforeDate(date, month, year)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks wheather the current ddate is before the given date or not.</p></dd>
+<dt><a href="#isCnpj">isCnpj(value)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the given value is a valid CNPJ or not.</p></dd>
+<dt><a href="#isCpf">isCpf(value)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the given value is a valid CPF or not.</p></dd>
+<dt><a href="#isEmail">isEmail(value)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the given value is a valid email or not.</p></dd>
+<dt><a href="#isIE">isIE(window)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the user is using Internet Explorer.</p></dd>
+<dt><a href="#isIE9">isIE9(window)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the user is using Internet Explorer 9.</p></dd>
+<dt><a href="#isIOS">isIOS(window)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the user is using an iOS device.</p></dd>
+<dt><a href="#isMobile">isMobile(window, mobileWidth)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Checks if the user is using a mobile screen.</p></dd>
+<dt><a href="#removeSpecialCharacters">removeSpecialCharacters(value, keepEmptySpace)</a> ⇒ <code>string</code></dt>
+<dd><p>Removes special characters from a string.</p></dd>
+<dt><a href="#textEllipsis">textEllipsis(input, limit, trail)</a> ⇒ <code>string</code></dt>
+<dd><p>Insert ellipsis (...) to input text.</p></dd>
+<dt><a href="#unformatMoney">unformatMoney(money, base)</a> ⇒ <code>number</code></dt>
+<dd><p>Unformat money to number.</p></dd>
+</dl>
 
-## formatMoney
-since `0.0.2`
+<a name="bytesToSize"></a>
 
-Format number to money.
+## bytesToSize(bytes) ⇒ <code>string</code>
+<p>Formats bytes as a human readable string.</p>
 
-### Returns
-*String* - Formatted string.
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Formatted string.</p>  
+**Since**: 0.7.0  
 
-### Params
+| Param | Type | Description |
+| --- | --- | --- |
+| bytes | <code>number</code> | <p>Number of bytes.</p> |
 
- - `amount` [*Number*] - Number to be formatted.
- - `base` [*Number*] - (Optional) Base for unit value. Representation of R$ 1,00 in number. (default: 100)
-
-### Example
-
+**Example**  
 ```js
-formatNumber(100)
-// R$ 1,00
-
-formatNumber(1)
-// R$ 00,01
-
-formatNumber(9890)
-// R$ 98,90
-
-formatNumber(9890, 1)
-// R$ 9890,00 
+bytesToSize(1024)// 1.0 KB
 ```
+<a name="capitalizeFirstLetter"></a>
 
+## capitalizeFirstLetter(input, allWords) ⇒ <code>string</code>
+<p>Capitalizes the first letter of (each) word(s).</p>
 
-## unformatMoney
-since `0.0.2`
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>String with first letter capitalized.</p>  
 
-Unformat money to number.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| input | <code>string</code> |  | <p>The string to be capitalized.</p> |
+| allWords | <code>boolean</code> | <code>false</code> | <p>(Optional) Whether to capitalize all words or just the first.</p> |
 
-### Returns
-*Number* - Money value.
+<a name="cleanAccents"></a>
 
-### Params
+## cleanAccents(value) ⇒ <code>string</code>
+<p>Replace accents for its equivalent non-accents characters.</p>
 
- - `money` [*String*] - String to be unformatted.
- - `base` [*Number*] - (Optional) Base for unit value. Representation of R$ 1,00 in number. (default: 100)
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Cleaned string.</p>  
+**Since**: 0.6.0  
 
-### Example
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | <p>Text to be cleaned.</p> |
 
+**Example**  
 ```js
-unformatMoney('R$ 1,00')
-// 100
-
-unformatMoney('R$ 00,01')
-// 1
-
-unformatMoney('R$ 98,90') 
-// 9890
-
-unformatMoney('R$ 98,90', 1) 
-// 98.90
+cleanAccents('açaí')// 'acai'
 ```
+<a name="countdownToDate"></a>
 
+## countdownToDate(date) ⇒ <code>ICountdownToDateReturn</code>
+<p>Countdown to given date.</p>
 
-## formatCep
-since `0.2.0`
+**Kind**: global function  
+**Returns**: <code>ICountdownToDateReturn</code> - <p>Countdown to date object (days, hours, minutes and seconds).</p>  
+**Since**: 0.7.0  
 
-Format string to CEP.
+| Param | Type | Description |
+| --- | --- | --- |
+| date | <code>Date</code> | <p>Date to countdown to.</p> |
 
-### Returns
-*String* - Formatted string.
+<a name="formatCep"></a>
 
-### Params
+## formatCep(cep) ⇒ <code>string</code>
+<p>Format string to CEP.</p>
 
- - `cep` [*String*] - String to be formatted.
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Formatted string.</p>  
+**Since**: 0.2.0  
 
-### Example
+| Param | Type | Description |
+| --- | --- | --- |
+| cep | <code>string</code> | <p>String to be formatted.</p> |
 
+**Example**  
 ```js
-formatCep('11740000') 
-// '11740-000'
+formatCep('11740000')// '11740-000'
 ```
+<a name="formatCnpj"></a>
 
-## formatCnpj
-since `0.6.0`
+## formatCnpj(cnpj) ⇒ <code>string</code>
+<p>Formats a string into CNPJ.</p>
 
-Formats a string to CNPJ.
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Formatted CNPJ.</p>  
+**Since**: 0.6.0  
 
-### Returns
-*String* - Formatted CNPJ.
+| Param | Type | Description |
+| --- | --- | --- |
+| cnpj | <code>string</code> | <p>String to be formatted.</p> |
 
-### Params
-
- - `cnpj` [*String*] - String to be formatted.
-
-### Example
-
+**Example**  
 ```js
-formatCnpj('90742025000153')
-// '90.742.025/0001-53'
+formatCnpj('90742025000153')// '90.742.025/0001-53'
 ```
+<a name="formatMoney"></a>
 
+## formatMoney(amount, base) ⇒ <code>string</code>
+<p>Format number to money.</p>
 
-## isCpf
-since `0.4.0`
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Formatted string.</p>  
+**Since**: 0.0.2  
 
-Validates wheather a string is a valid CPF or not.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| amount | <code>number</code> |  | <p>Number to be formatted.</p> |
+| base | <code>number</code> | <code>100</code> | <p>(Optional) Base for unit value. Representation of R$ 1,00 in number. (default: 100)</p> |
 
-### Returns
-*Boolean* - Is CPF valid.
-
-### Params
-
- - `value` [*String*] - String to be validated.
-
-### Example
-
+**Example**  
 ```js
-isCpf('340.004.230-70') 
-// true
-
-isCpf('111.111.111-11') 
-// false
+formatNumber(9890)// R$ 98,90formatNumber(9890, 1)// R$ 9890,00
 ```
+<a name="getCep"></a>
 
-## isCnpj
-since `0.4.0`
+## getCep(cep) ⇒ <code>Promise.&lt;(ICepInformations\|ICepError)&gt;</code>
+<p>Gets CEP informations from ViaCEP API.</p>
 
-Validates wheather a string is a valid CNPJ or not.
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;(ICepInformations\|ICepError)&gt;</code> - <p>Promise for CEP informations.</p>  
+**Since**: 1.0.0  
 
-### Returns
-*Boolean* - Is CNPJ valid.
+| Param | Type | Description |
+| --- | --- | --- |
+| cep | <code>string</code> | <p>CEP.</p> |
 
-### Params
+<a name="getCnpj"></a>
 
- - `value` [*String*] - String to be validated.
+## getCnpj(cnpj) ⇒ <code>Promise.&lt;Object&gt;</code>
+<p>Gets CNPJ informations from Receita WS API.</p>
 
-### Example
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for CNPJ informations.</p>  
+**Since**: 1.0.0  
 
+| Param | Type | Description |
+| --- | --- | --- |
+| cnpj | <code>string</code> | <p>CNPJ.</p> |
+
+<a name="getUrlParam"></a>
+
+## getUrlParam(url, param) ⇒ <code>string</code>
+<p>Gets a parameter from the url.</p>
+
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Parameter value.</p>  
+**Since**: 0.6.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| url | <code>string</code> | <p>Url to be parsed.</p> |
+| param | <code>string</code> | <p>Parameter to be searched for.</p> |
+
+**Example**  
 ```js
-isCnpj('50.812.421/0001-95') 
-// true
-
-isCnpj('50812421000195') 
-// true
-
-isCnpj('11.111.111/1111-11') 
-// false
+getUrlParam('http://localhost:8080/?param=value', 'param');// returns 'value'
 ```
+<a name="insert"></a>
 
+## insert(index, newItem, list) ⇒ <code>Array.&lt;any&gt;</code>
+<p>Inserts an element at the given index. If the index is too large, element is inserted at the end of the list.</p>
 
-## isCep
-since `0.6.0`
+**Kind**: global function  
+**Returns**: <code>Array.&lt;any&gt;</code> - <p>List of items with new item inserted.</p>  
+**Since**: 0.6.0  
 
-Validates wheather a string is a valid CEP or not. However, it does not validate wheather the CEP exists.
+| Param | Type | Description |
+| --- | --- | --- |
+| index | <code>number</code> | <p>Index to insert element at.</p> |
+| newItem | <code>any</code> | <p>Element to insert.</p> |
+| list | <code>Array.&lt;any&gt;</code> | <p>List of items.</p> |
 
-### Returns
-*Boolean* - Is CEP valid.
-
-### Params
-
- - `value` [*String*] - String to be validated.
-
-### Example
-
+**Example**  
 ```js
-isCep('1174000') 
-// true
-
-isCep('11740-000') 
-// true
-
-isCep('114') 
-// false
+insert(1, 'Batman', [1, 2, 3]);// [1, 'Batman', 2, 3]insert(10, ['Batman'], [1, 2, 3]);// [1, 2, 3, ['Batman']]
 ```
+<a name="isAfterDate"></a>
 
+## isAfterDate(date, month, year) ⇒ <code>boolean</code>
+<p>Checks wheather the current ddate is after the given date or not.</p>
 
-## isEmail
-since `0.6.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>True if the current date is after the given date</p>  
+**Since**: 0.6.0  
 
-Validates wheather a string is a valid email or not.
+| Param | Type | Description |
+| --- | --- | --- |
+| date | <code>number</code> | <p>Date of the month (1-31).</p> |
+| month | <code>number</code> | <p>Month of the year (0-11).</p> |
+| year | <code>number</code> | <p>Year (4 digits).</p> |
 
-### Returns
-*Boolean* - Is email valid.
-
-### Params
-
- - `value` [*String*] - String to be checked.
-
-### Example
-
+**Example**  
 ```js
-isEmail('test@email.com')
-// true
-
-isEmail('testemail.com')
-// false
+isAfterDate(31, 11, 2019);// true
 ```
+<a name="isAndroid"></a>
 
+## isAndroid(window) ⇒ <code>boolean</code>
+<p>Checks if the user is using an Android device.</p>
 
-## isMobile
-since `0.7.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>If the device is an Android.</p>  
 
-Checks if the user is using a mobile screen.
+| Param | Type | Description |
+| --- | --- | --- |
+| window | <code>Window</code> | <p>Window object.</p> |
 
-### Returns
-*Boolean* - If it is a mobile screen
+<a name="isBeforeDate"></a>
 
-### Params
+## isBeforeDate(date, month, year) ⇒ <code>boolean</code>
+<p>Checks wheather the current ddate is before the given date or not.</p>
 
- - `window` [*Window*] - Window object.
- - `mobileWidth` [*Number*] - (Optional) Mobile screen width. Default is 768.
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>True if the current date is before the given date</p>  
+**Since**: 0.6.0  
 
+| Param | Type | Description |
+| --- | --- | --- |
+| date | <code>number</code> | <p>Date of the month (1-31).</p> |
+| month | <code>number</code> | <p>Month of the year (0-11).</p> |
+| year | <code>number</code> | <p>Year (4 digits).</p> |
 
-## isAndroid
-since `0.7.0`
-
-Checks if the user is using an Android device.
-
-### Returns
-*Boolean* - If the device is an Android.
-
-### Params
-
- - `window` [*Window*] - Window object.
-
-
-## isIOS
-since `0.7.0`
-
-Checks if the user is using an iOS device.
-
-### Returns
-*Boolean* - If the device is an iOS.
-
-### Params
-
- - `window` [*Window*] - Window object.
-
-
-## isIE
-since `0.7.0`
-
-Checks if the user is using Internet Explorer.
-
-### Returns
-*Boolean* - If the browser is Internet Explorer.
-
-### Params
-
- - `window` [*Window*] - Window object.
-
-
-## isIE9
-since `0.7.0`
-
-Checks if the user is using Internet Explorer 9.
-
-### Returns
-*Boolean* - If the browser is Internet Explorer 9.
-
-### Params
-
- - `window` [*Window*] - Window object.
-
-
-## isAfterDate
-since `0.6.0`
-
-Checks wheather the current ddate is after the given date or not.
-
-### Returns
-*Boolean* - If the current date is after the given date or not.
-
-### Params
-
- - `date` [*Number*] - Date of the month (1-31).
- - `month` [*Number*] - Month of the year (0-11).
- - `year` [*Number*] - Year (4 digits).
-
-### Example
-
+**Example**  
 ```js
-isAfterDate(31, 11, 2019);
-// true
+isBeforeDate(31, 11, 3999);// true
 ```
+<a name="isCnpj"></a>
 
+## isCnpj(value) ⇒ <code>boolean</code>
+<p>Checks if the given value is a valid CNPJ or not.</p>
 
-## isBeforeDate
-since `0.6.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>Whether the value is a valid CNPJ or not.</p>  
+**Since**: 0.4.0  
 
-Checks wheather the current ddate is before the given date or not.
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | <p>Value to be checked.</p> |
 
-### Returns
-*Boolean* - If the current date is before the given date or not.
-
-### Params
-
- - `date` [*Number*] - Date of the month (1-31).
- - `month` [*Number*] - Month of the year (0-11).
- - `year` [*Number*] - Year (4 digits).
-
-### Example
-
+**Example**  
 ```js
-isBeforeDate(31, 11, 3999);
-// true
+isCnpj('95.890.661/0001-46');// trueisCnpj('95890661000146');// trueisCnpj('11.111.111/1111-11')// false
 ```
+<a name="isCpf"></a>
 
+## isCpf(value) ⇒ <code>boolean</code>
+<p>Checks if the given value is a valid CPF or not.</p>
 
-## textEllipsis
-since `0.1.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>Whether the value is a valid CPF or not.</p>  
+**Since**: 0.4.0  
 
-Insert ellipsis (...) to input text.
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | <p>Value to be checked.</p> |
 
-### Returns
-*String* - Ellipsed input.
-
-### Params
-
- - `input` [*String*] - Text to be ellipsed.
- - `limit` [*Number*] - Limit of characters before ellipsed.
- - `trail` [*String*] - (Optional) Custom trail to be inserted.
-
-### Example
-
+**Example**  
 ```js
-textEllipsis('Lorem ipsum', 4) 
-// 'Lore...'
-
-textEllipsis('Lorem ipsum', 4, '-') 
-// 'Lore-'
+isCpf('223.101.020-83');// trueisCpf('22310102083');// trueisCpf('111.111.111-11')// false
 ```
+<a name="isEmail"></a>
 
+## isEmail(value) ⇒ <code>boolean</code>
+<p>Checks if the given value is a valid email or not.</p>
 
-## capitalizeFirstLetter
-since `0.2.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>Whether the value is a valid email or not.</p>  
+**Since**: 0.6.0  
 
-Capitalizes the first letter of word(s).
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | <p>Value to be checked.</p> |
 
-### Returns
-*String* - Capitalized string.
-
-### Params
-
- - `input` [*String*] - The string to be capitalized.
- - `allWords` [*Boolean*] - Whether to capitalize all words or just the first. (default: false)
-
-### Example
-
+**Example**  
 ```js
-capitalizeFirstLetter('hello world') 
-// 'Hello world'
-
-capitalizeFirstLetter('hello world', true) 
-// 'Hello World'
+isEmail('test@email.com')// trueisEmail('testemail.com')// false
 ```
+<a name="isIE"></a>
 
+## isIE(window) ⇒ <code>boolean</code>
+<p>Checks if the user is using Internet Explorer.</p>
 
-## countdownToDate
-since `0.7.0`
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>If the browser is Internet Explorer.</p>  
 
-Countdown to given date.
+| Param | Type | Description |
+| --- | --- | --- |
+| window | <code>Window</code> | <p>Window object.</p> |
 
-### Returns
-*Object* - Countdown to date (days, hours, minutes and seconds).
+<a name="isIE9"></a>
 
-### Params
+## isIE9(window) ⇒ <code>boolean</code>
+<p>Checks if the user is using Internet Explorer 9.</p>
 
- - `date` [*Date*] - Date to countdown to.
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>If the browser is Internet Explorer 9.</p>  
 
+| Param | Type | Description |
+| --- | --- | --- |
+| window | <code>Window</code> | <p>Window object.</p> |
 
-## insert
-since `0.6.0`
+<a name="isIOS"></a>
 
-Inserts an element at the given index. If the index is too large, element is inserted at the end of the list.
+## isIOS(window) ⇒ <code>boolean</code>
+<p>Checks if the user is using an iOS device.</p>
 
-### Returns
-*Any[]* - List of items with new item inserted.
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>If the device is an iOS.</p>  
 
-### Params
+| Param | Type | Description |
+| --- | --- | --- |
+| window | <code>Window</code> | <p>Window object.</p> |
 
- - `index` [*Number*] - The string to be capitalized.
- - `newItem` [*Any*] - Element to insert.
- - `list` [*Any[]*] - List of items.
+<a name="isMobile"></a>
 
-### Example
+## isMobile(window, mobileWidth) ⇒ <code>boolean</code>
+<p>Checks if the user is using a mobile screen.</p>
 
+**Kind**: global function  
+**Returns**: <code>boolean</code> - <p>If it is a mobile screen.</p>  
+**Since**: 0.7.0  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| window | <code>Window</code> |  | <p>Window object.</p> |
+| mobileWidth | <code>number</code> | <code>768</code> | <p>(Optional) Mobile screen width. Default is 768.</p> |
+
+<a name="removeSpecialCharacters"></a>
+
+## removeSpecialCharacters(value, keepEmptySpace) ⇒ <code>string</code>
+<p>Removes special characters from a string.</p>
+
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Cleaned string.</p>  
+**Since**: 0.6.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | <p>Text to be cleaned.</p> |
+| keepEmptySpace | <code>boolean</code> | <p>(Optional) Wheather to keep empty space after removing special characters.</p> |
+
+**Example**  
 ```js
-insert(1, 'Batman', [1, 2, 3]);
-// [1, 'Batman', 2, 3]
-
-insert(10, ['Batman'], [1, 2, 3])
-// [1, 2, 3, ['Batman']]
+removeSpecialCharacters('@açaí')// 'aa'removeSpecialCharacters('@açaí', true)// ' a a'
 ```
+<a name="textEllipsis"></a>
 
+## textEllipsis(input, limit, trail) ⇒ <code>string</code>
+<p>Insert ellipsis (...) to input text.</p>
 
-## bytesToSize
-since `0.7.0`
+**Kind**: global function  
+**Returns**: <code>string</code> - <p>Ellipsed input.</p>  
+**Since**: 0.1.0  
 
-Formats bytes as a human readable string.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| input | <code>string</code> |  | <p>Text to be ellipsed.</p> |
+| limit | <code>number</code> |  | <p>Limit of characters before ellipsed.</p> |
+| trail | <code>string</code> | <code>&quot;...&quot;</code> | <p>(Optional) Custom trail to be inserted.</p> |
 
-### Returns
-*String* - Formatted string.
-
-### Params
-
- - `bytes` [*Number*] - Number of bytes.
-
-### Example
-
+**Example**  
 ```js
-bytesToSize(1024);
-// 1.0 KB
+textEllipsis('Lorem ipsum', 4)// 'Lore...'textEllipsis('Lorem ipsum', 4, '-')// 'Lore-'
 ```
+<a name="unformatMoney"></a>
 
+## unformatMoney(money, base) ⇒ <code>number</code>
+<p>Unformat money to number.</p>
 
-## cleanAccents
-since `0.6.0`
+**Kind**: global function  
+**Returns**: <code>number</code> - <p>Money value.</p>  
+**Since**: 0.0.2  
 
-Replace accents for its equivalent non-accents characters.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| money | <code>string</code> |  | <p>String to be formatted.</p> |
+| base | <code>number</code> | <code>100</code> | <p>(Optional) Base for unit value. Representation of R$ 1,00 in number. (default: 100)</p> |
 
-### Returns
-*String* - Cleaned string.
-
-### Params
-
- - `value` [*String*] - Text to be cleaned.
-
-### Example
-
+**Example**  
 ```js
-cleanAccents('açaí')
-// 'acai'
+unformatMoney('R$ 98,90')// 9890unformatMoney('R$ 98,90', 1)// 98.90
 ```
-
-
-## removeSpecialCharacters
-since `0.6.0`
-
-Removes special characters from a string.
-
-### Returns
-*String* - Cleaned string.
-
-### Params
-
- - `value` [*String*] - Text to be cleaned.
- - `keepEmptySpace` [*Boolean*] - (Optional) Wheather to keep empty space after removing special characters.
-
-### Example
-
-```js
-removeSpecialCharacters('@açaí')
-// 'aa'
-
-removeSpecialCharacters('@açaí', true)
-// ' a a'
-```
-
-
-## getUrlParam
-since `0.6.0`
-
-Gets a parameter from the url.
-
-### Returns
-*String* - Parameter value.
-
-### Params
-
- - `url` [*String*] - Url to be parsed.
- - `param` [*String*] - Parameter to be searched for.
-
-### Example
-
-```js
-getUrlParam('http://localhost:8080/?param=value', 'param');
-// returns 'value'
-```
-
-## getCep
-since `1.0.0`
-
-Gets CEP informations from ViaCEP API.
-
-### Returns
-
-*Promise* - Promise for CEP informations.
-
-### Params
-
-- `cep` [*String*] - CEP.
-
-
-## getCnpj
-since `1.0.0`
-
-Gets CNPJ informations from Receita WS API.
-
-### Returns
-
-*Promise* - Promise for CNPJ informations.
-
-### Params
-
-- `cnpj` [*String*] - CNPJ.

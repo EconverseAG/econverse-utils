@@ -1,149 +1,117 @@
-# Table of contents
+## Functions
 
-- [VTEX utilities](#vtex-utilities)
-  - [getProductById](#getProductById)
-  - [getProductVariations](#getProductVariations)
-  - [getProductSuggestions](#getProductSuggestions)
-  - [getCollectionShelf](#getCollectionShelf)
-  - [getProfile](#getProfile)
-  - [MasterData.get](#masterdataget)
-  - [MasterData.post](#masterdatapost)
+<dl>
+<dt><a href="#getCollectionShelf">getCollectionShelf(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></dt>
+<dd><p>Gets shelf HTML for a given collection.</p></dd>
+<dt><a href="#getProductById">getProductById(store, productId)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
+<dd><p>Gets a list of a product suggestions.</p></dd>
+<dt><a href="#getProductSimilars">getProductSimilars(store, productId)</a> ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code></dt>
+<dd><p>Gets a list of a product similars.</p></dd>
+<dt><a href="#getProductSuggestions">getProductSuggestions(store, productId)</a> ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code></dt>
+<dd><p>Gets a list of a product suggestions.</p></dd>
+<dt><a href="#getProductVariations">getProductVariations(store, productId)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
+<dd><p>Gets product variations (SKUs).</p></dd>
+<dt><a href="#getProfile">getProfile(store)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
+<dd><p>Gets current user's profile.</p></dd>
+<dt><a href="#getShelfBySku">getShelfBySku(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></dt>
+<dd><p>Gets product shelf for given SKUs.</p></dd>
+</dl>
 
-# VTEX utilities
+<a name="getCollectionShelf"></a>
 
-## getProductById
-since `0.3.0`
+## getCollectionShelf(store, params) ⇒ <code>Promise.&lt;any&gt;</code>
+<p>Gets shelf HTML for a given collection.</p>
 
-Gets a product from catalog by its ID.
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;any&gt;</code> - <p>Promise for search result in HTML.</p>  
+**Since**: 0.7.0  
 
-### Returns
-*Promise* - Promise for product object.
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| params | <code>ISearchParams</code> | <p>Params object.</p> |
 
-### Params
+<a name="getProductById"></a>
 
- - `store` [*String*] - Store's account name.
- - `productId` [*Number* or *String*] - Product ID to search for.
+## getProductById(store, productId) ⇒ <code>Promise.&lt;Object&gt;</code>
+<p>Gets a list of a product suggestions.</p>
 
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for list of product suggestions.</p>  
+**Since**: 0.3.0  
 
-## getProductVariations
-since `0.7.0`
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| productId | <code>string</code> \| <code>number</code> | <p>Product ID.</p> |
 
-Gets product variations (SKUs).
+<a name="getProductSimilars"></a>
 
-### Returns
-*Promise* - Promise for product informations and its variations.
+## getProductSimilars(store, productId) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+<p>Gets a list of a product similars.</p>
 
-### Params
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> - <p>Promise for list of product similars.</p>  
+**Since**: 1.0.0  
 
- - `store` [*String*] - Store's account name.
- - `productId` [*Number* or *String*] - Product ID to search for.
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| productId | <code>string</code> \| <code>number</code> | <p>Product ID.</p> |
 
+<a name="getProductSuggestions"></a>
 
-## getProductSuggestions
-since `0.7.0`
+## getProductSuggestions(store, productId) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+<p>Gets a list of a product suggestions.</p>
 
-Gets a list of a product suggestions.
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> - <p>Promise for list of product suggestions.</p>  
+**Since**: 0.7.0  
 
-### Returns
-*Promise<Object[]>* - Promise for list of product suggestions.
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| productId | <code>string</code> \| <code>number</code> | <p>Product ID.</p> |
 
-### Params
+<a name="getProductVariations"></a>
 
- - `store` [*String*] - Store's account name.
- - `productId` [*Number* or *String*] - Product ID to search for.
+## getProductVariations(store, productId) ⇒ <code>Promise.&lt;Object&gt;</code>
+<p>Gets product variations (SKUs).</p>
 
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for product informations and its variations.</p>  
+**Since**: 0.7.0  
 
-## getProductSimilars
-since `0.7.0`
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| productId | <code>string</code> \| <code>number</code> | <p>Product ID.</p> |
 
-Gets a list of a product similars.
+<a name="getProfile"></a>
 
-### Returns
-*Promise<Object[]>* - Promise for list of product similars.
+## getProfile(store) ⇒ <code>Promise.&lt;Object&gt;</code>
+<p>Gets current user's profile.</p>
 
-### Params
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for profile object.</p>  
+**Since**: 0.7.0  
 
- - `store` [*String*] - Store's account name.
- - `productId` [*Number* or *String*] - Product ID to search for.
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>Store's account name.</p> |
 
+<a name="getShelfBySku"></a>
 
-## getCollectionShelf
-since `0.7.0`
+## getShelfBySku(store, params) ⇒ <code>Promise.&lt;any&gt;</code>
+<p>Gets product shelf for given SKUs.</p>
 
-Gets shelf HTML for a given collection.
+**Kind**: global function  
+**Returns**: <code>Promise.&lt;any&gt;</code> - <p>Promise for shelf HTML string.</p>  
+**Category**: VTEX  
+**Since**: 1.1.0  
 
-### Returns
-*Promise<String>* - Promise for search result in HTML.
+| Param | Type | Description |
+| --- | --- | --- |
+| store | <code>string</code> | <p>VTEX store name (account name).</p> |
+| params | <code>ISearchParams</code> | <p>Params object.</p> |
 
-### Params
-
-- `store` [*String*] - Store's account name.
-- `params` [*Object*] - Params object.
-  - collectionId (`fq=H:${collectionId}`) 
-  - pageSize (`PS=${pageSize}`)
-  - pageNumber (`PageNumber=${pageNumber}`) 
-  - shelfTemplateId (`sl=${shelfTemplateId}`) 
-  - order (`O=${order}`) 
-
-
-## getProfile
-since `0.7.0`
-
-Gets current user's profile.
-
-### Returns
-*Promise* - Promise for user profile.
-
-### Params
-
-- `store` [*String*] - Store's account name.
-
-
-## getShelfBySku
-since `1.1.0`
-
-Gets product shelf for given SKUs.
-
-### Returns
-*Promise* - Promise for user profile.
-
-### Params
-
-- `store` [*String*] - Store's account name.
-- `params` [*String*] - Params object.
-  - skus - List of SKUs. (`fq=skuId:`)
-  - pageSize - Products per page. (`PS=${pageSize}`)
-  - pageNumber - Page number. (`PageNumber=${pageNumber}`) 
-  - shelfTemplateId - Shelf template ID. (`sl=${shelfTemplateId}`) 
-  - order - (Optional) Ordering method. (`O=${order}`) 
-
-## MasterData.get
-since `0.3.0`
-
-Gets data from Master Data.
-
-### Returns
-*Promise* - Promise for requested data.
-
-### Params
-- `params` [*Object*] - Params object.
-  - store [*String*] - Store's account name.
-  - acronym [*String*] - Data entity's acronym. (e.g. 'NL')
-  - fields [*String[]*] - List of fields to retrieve.
-  - where [*String*] - Condition to match against. (e.g. 'email=test@email.com')
-  - useSafeData [*Boolean*] - Wheather to use 'io/safedata' path or not.
-
-
-## MasterData.post
-since `0.3.0`
-
-Posts data to Master Data.
-
-### Returns
-*Promise* - Promise for posted data.
-
-### Params
-- `params` [*Object*] - Params object.
-  - store [*String*] - Store's account name.
-  - acronym [*String*] - Data entity's acronym. (e.g. 'NL')
-  - data [*Object*] - Data to post.
