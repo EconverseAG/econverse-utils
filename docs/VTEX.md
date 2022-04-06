@@ -98,6 +98,25 @@ Gets current user's profile.
 
 - `store` [*String*] - Store's account name.
 
+
+## getShelfBySku
+since `1.1.0`
+
+Gets product shelf for given SKUs.
+
+### Returns
+*Promise* - Promise for user profile.
+
+### Params
+
+- `store` [*String*] - Store's account name.
+- `params` [*String*] - Params object.
+  - skus - List of SKUs. (`fq=skuId:`)
+  - pageSize - Products per page. (`PS=${pageSize}`)
+  - pageNumber - Page number. (`PageNumber=${pageNumber}`) 
+  - shelfTemplateId - Shelf template ID. (`sl=${shelfTemplateId}`) 
+  - order - (Optional) Ordering method. (`O=${order}`) 
+
 ## MasterData.get
 since `0.3.0`
 
