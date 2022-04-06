@@ -107,7 +107,6 @@
 
 **Kind**: global function  
 **Returns**: <code>Promise.&lt;any&gt;</code> - <p>Promise for shelf HTML string.</p>  
-**Category**: VTEX  
 **Since**: 1.1.0  
 
 | Param | Type | Description |
