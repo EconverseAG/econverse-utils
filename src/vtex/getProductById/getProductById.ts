@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 /**
- * Gets a list of a product suggestions.
+ * Gets a product information given its ID.
  * @since 0.3.0
  * @param {string} store VTEX store name (account name).
  * @param {string | number} productId Product ID.

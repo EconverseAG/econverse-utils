@@ -4,7 +4,7 @@
 <dt><del><a href="#getCollectionShelf">getCollectionShelf(store, params)</a> ⇒ <code>Promise.&lt;any&gt;</code></del></dt>
 <dd><p>Gets shelf HTML for a given collection.</p></dd>
 <dt><a href="#getProductById">getProductById(store, productId)</a> ⇒ <code>Promise.&lt;Object&gt;</code></dt>
-<dd><p>Gets a list of a product suggestions.</p></dd>
+<dd><p>Gets a product information given its ID.</p></dd>
 <dt><a href="#getProductSimilars">getProductSimilars(store, productId)</a> ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code></dt>
 <dd><p>Gets a list of a product similars.</p></dd>
 <dt><a href="#getProductSuggestions">getProductSuggestions(store, productId)</a> ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code></dt>
@@ -46,7 +46,7 @@
 <a name="getProductById"></a>
 
 ## getProductById(store, productId) ⇒ <code>Promise.&lt;Object&gt;</code>
-<p>Gets a list of a product suggestions.</p>
+<p>Gets a product information given its ID.</p>
 
 **Kind**: global function  
 **Returns**: <code>Promise.&lt;Object&gt;</code> - <p>Promise for list of product suggestions.</p>  
