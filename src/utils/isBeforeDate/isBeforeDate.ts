@@ -1,5 +1,5 @@
 /**
- * Checks wheather the current ddate is before the given date or not.
+ * Checks wheather the current date is before the given date or not.
  * @since 0.6.0
  * @param {number} date Date of the month (1-31).
  * @param {number} month Month of the year (0-11).
